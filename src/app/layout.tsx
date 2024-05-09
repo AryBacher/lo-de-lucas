@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Encabezado from "@/components/Encabezado";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -14,11 +15,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <head>
         <link href="https://fonts.cdnfonts.com/css/coldiac-free" rel="stylesheet" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Encabezado />
+        {children}
+      </body>
     </html>
   );
 }

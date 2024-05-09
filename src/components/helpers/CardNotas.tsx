@@ -16,7 +16,7 @@ const CardNotas = ({ href, title, image, description }: Props) => {
       </picture>
       <div className="w-full h-[50%] flex justify-start items-center flex-col gap-2">
         <div className="w-full flex justify-start items-center">
-          <h2 className="w-full text-start text-xl font-bold title">{title}</h2>
+          <h2 className="w-full text-start text-xl font-bold ">{title}</h2>
         </div>
         <div className="w-full flex justify-between items-end flex-row gap-3">
           <p className="w-[80%]  text-container text-[#7C7C7C] text-sm text-start">
@@ -24,7 +24,7 @@ const CardNotas = ({ href, title, image, description }: Props) => {
           </p>
           <a
             href={href}
-            className="w-24 h-12 bg-[#E1AF00] flex justify-center items-center font-bold underline p-2"
+            className="w-20 h-10 bg-[#E1AF00] text-[13px] flex justify-center items-center font-bold underline p-2"
             target="_blank">Leer más </a>
         </div>
       </div>
