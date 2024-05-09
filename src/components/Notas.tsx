@@ -37,10 +37,11 @@ const Notas = () => {
           NOTAS Y ENTREVISTAS
         </h1>
         <div className="w-full h-5/6 flex justify-center items-center flex-wrap gap-10">
-          {CardInfo.map((card) => {
+          {CardInfo.map((card, index) => {
 
             return (
               <CardNotas
+                key={index}
                 title={card.title}
                 description={card.description}
                 image={card.image}

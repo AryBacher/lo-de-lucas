@@ -32,9 +32,10 @@ const Menu = () => {
         LOS PLATOS FAVORITOS
       </h1>
       <div className="w-full h-4/6 flex flex-col md:flex-row items-center justify-center gap-10">
-        {CardInfo.map((card) => {
+        {CardInfo.map((card, index) => {
           return (
             <CardMenu
+              key={index}
               title={card.title}
               description={card.description}
               image={card.image}
