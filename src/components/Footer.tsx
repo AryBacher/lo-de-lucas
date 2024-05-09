@@ -32,11 +32,11 @@ const Footer = () => {
           </li>
         ))}
       </ul>
-      <div className="w-full h-max flex items-center justify-center border-t-[1px] border-white/20 flex-col">
-        <small className="text-white text-sm font-bold mt-4 mb-1">
+      <div className="w-[85%] h-max flex items-center justify-center border-t-[1px] border-white/20 flex-col">
+        <small className="text-center text-white text-sm font-bold mt-4 mb-1">
           © 2024 Lo De Lucas. Todos los derechos reservados.
         </small>
-        <small className="text-white/60 text-sm font-normal">
+        <small className="text-center text-white/60 text-sm font-normal">
           Diseñado y desarrollado por <a href="https://synera.com.ar" target='_blank' className='underline text-[#84E9FF]'>Synera</a>
         </small>
       </div>
