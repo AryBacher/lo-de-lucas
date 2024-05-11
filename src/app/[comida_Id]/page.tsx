@@ -7,29 +7,42 @@ type ComidaData = {
   price: number;
 };
 
-const comidasData: Record<string, ComidaData> = {
-  milanesas: {
-    description: "Milanesas",
-    price: 10
-  },
-  pastas: {
-    description: "Pastas",
-    price: 12
-  },
-  postres: {
-    description: "Postres",
-    price: 5
-  }
-};
 export default function Home() {
-  const { comidaId } = useParams();
-  const comidaData = comidasData[comidaId as string];
+  const comidasData = [
+    {
+      id: "milanesas",
+      description: "Milanesas",
+      price: 10
+    }, {
+      id: "pastas",
+      description: "Pastas",
+      price: 12
+    }, {
+      id: "postres",
+      description: "Postres",
+      price: 5
 
+    }
+  ]
+  const comidaId = useParams();
+  comidaId.toString() === 'milanesas' ? comidasData.indexOf(comidasData[0]) : comidaId.toString() === 'pastas' ? comidasData.indexOf(comidasData[1]) : comidasData.indexOf(comidasData[2])
   return (
     <div className='w-full h-screen'>
-      {comidaData && <Comida title={comidaId as string} description={comidaData.description} price={comidaData.price} />}
+      {
+        comidasData.map((comida, index) => {
+          return (
+            <Comida
+              key={index}
+              title={comida.id}
+              description={comida.description}
+              price={comida.price}
+            />
+          )
+        }
+        )
+      }
     </div>
-  );
-
+  )
 }
+
 
