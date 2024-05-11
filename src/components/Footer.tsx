@@ -27,7 +27,7 @@ const Footer = () => {
         {redesItems.map((item, index) => (
           <li key={index}>
             <a href={item.link} target='_blank'>
-              <img src={item.icon} alt='icon' />
+              <Image height={30} width={30} src={item.icon} alt='icon' />
             </a>
           </li>
         ))}

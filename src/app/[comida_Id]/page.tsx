@@ -28,11 +28,12 @@ const comidasData: Record<string, ComidaData> = {
 
 const page = () => {
   const { comida_Id } = useParams()
-  const comida = comida_Id ? comidasData[comida_Id] : undefined
-  console.log(comidasData[comida_Id])
+  const firstComidaId = Array.isArray(comida_Id) ? comida_Id[0] : comida_Id;
+  const comida = firstComidaId ? comidasData[firstComidaId] : undefined;
+  const title = typeof firstComidaId === 'string' ? firstComidaId : '';
   return (
     <div className='w-full h-screen'>
-      {comida && <Comida title={comida.comida_Id} description={comida.description} price={comida.price} />}
+      {comida && <Comida title={title} description={comida.description} price={comida.price} />}
     </div>
   )
 }
