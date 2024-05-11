@@ -18,7 +18,8 @@ const Ubicacion = () => {
   ]
 
   return (
-    <section className='w-[85%] flex justify-center items-center flex-col gap-5'>
+    <section className='w-[85%] flex justify-center items-center flex-col gap-5'
+      id='ubicacion'>
       <div className='w-full h-1/6 flex justify-center items-center flex-col'>
         <h1 className='text-2xl title text-black'>Encontranos</h1>
         <p className='text-container text-[#7C7C7C] text-sm text-center'>Visita nuestro Bodegón para vivir la experiencia de comer en Lo de Lucas en carne propia.</p>

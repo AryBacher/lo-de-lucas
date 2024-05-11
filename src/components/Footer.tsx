@@ -17,7 +17,7 @@ const Footer = () => {
     }
   ]
   return (
-    <footer className='w-full bg-[#5B0D0F] flex justify-center items-center flex-col px-5 py-8 gap-8'>
+    <footer className='w-full bg-[#5B0D0F] flex justify-center items-center flex-col p-5 gap-8'>
       <h1 className='title text-white text-3xl text-center'>“En lo de lucas se come sin culpa”</h1>
       <picture className='flex justify-center items-center'>
         <Image src={'/fotos/logo.png'} alt='' width={60} height={60}></Image>

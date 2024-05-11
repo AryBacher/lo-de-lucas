@@ -1,6 +1,4 @@
-import Encabezado from "@/components/Encabezado";
 import Footer from "@/components/Footer";
-import Franquicias from "@/components/Franquicias";
 import Frase from "@/components/Frase";
 import Intro from "@/components/Intro";
 import Menu from "@/components/Menu";
@@ -17,8 +15,8 @@ export default function Home() {
       <Notas />
       <Frase />
       <Ubicacion />
-      <Franquicias />
       <Footer />
+
     </main>
   );
 }

@@ -1,0 +1,17 @@
+{
+  "milanesas": {
+    "comida_Id": "Milanesas",
+    "description": "Deliciosas milanesas de carne o pollo",
+    "price": 10
+  },
+  "pastas": {
+    "comida_Id": "Pastas",
+    "description": "Variedad de pastas frescas y caseras",
+    "price": 12
+  },
+  "postres": {
+    "comida_Id": "Postres",
+    "description": "Sabrosos postres caseros",
+    "price": 8
+  }
+}

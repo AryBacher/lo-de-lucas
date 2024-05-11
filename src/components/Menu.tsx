@@ -7,24 +7,25 @@ const Menu = () => {
       title: "MILANESAS",
       description: "Abundantes milanesas de todos los gustos existentes.",
       image: "/fotos/Milanesa.png",
-      href: "#",
-    },
-    {
-      title: "POSTRES",
-      description: "Abundantes milanesas de todos los gustos existentes.",
-      image: "/fotos/Postres.png",
-      href: "#",
+      href: "/milanesas",
     },
     {
       title: "PASTAS",
       description: "Abundantes milanesas de todos los gustos existentes.",
       image: "/fotos/Pastas.png",
-      href: "#",
+      href: "/pastas",
+    },
+    {
+      title: "POSTRES",
+      description: "Abundantes milanesas de todos los gustos existentes.",
+      image: "/fotos/Postres.png",
+      href: "/postres",
     },
   ]
   return (
     <section
       className="w-full min-h-screen flex justify-center items-center flex-col gap-5"
+      id='menu'
     >
       <h1
         className="text-[#0E0E0E] w-full h-1/6 text-2xl font-medium tracking-[.25rem] text-center title"
