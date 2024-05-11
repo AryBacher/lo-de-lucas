@@ -21,8 +21,7 @@ const comidasData: Record<string, ComidaData> = {
     price: 5
   }
 };
-
-const page = () => {
+export default function Home() {
   const { comidaId } = useParams();
   const comidaData = comidasData[comidaId as string];
 
@@ -31,6 +30,6 @@ const page = () => {
       {comidaData && <Comida title={comidaId as string} description={comidaData.description} price={comidaData.price} />}
     </div>
   );
-};
 
-export default page;
+}
+
