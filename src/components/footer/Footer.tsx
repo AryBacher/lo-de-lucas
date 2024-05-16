@@ -23,7 +23,7 @@ const Footer = () => {
         <Image src={'/fotos/logo.png'} alt='' width={60} height={60}></Image>
       </picture>
       <h3 className='text-white'>Av 25 de Mayo 997, Escobar.</h3>
-      <ul className='w-[85%] flex justify-between items-center'>
+      <ul className='w-[85%] flex justify-between sm:justify-evenly items-center'>
         {redesItems.map((item, index) => (
           <li key={index}>
             <a href={item.link} target='_blank'>
@@ -32,7 +32,7 @@ const Footer = () => {
           </li>
         ))}
       </ul>
-      <div className="w-[85%] h-max flex items-center justify-center border-t-[1px] border-white/20 flex-col">
+      <div className="w-[50%] sm:[85%] h-max flex items-center justify-center border-t-[1px] border-white/20 flex-col">
         <small className="text-center text-white text-sm font-bold mt-4 mb-1">
           © 2024 Lo De Lucas. Todos los derechos reservados.
         </small>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Ubicacion = () => {
+const Ubi = () => {
   const items = [
     {
       title: 'Av. 25 de Mayo 997, Escobár',
@@ -38,11 +38,10 @@ const Ubicacion = () => {
       </div>
       <div className='w-full h-4/6'>
         <div className='w-full h-[300px] shadow-2xl bg-gray-300 rounded-lg '>
-
         </div>
       </div>
     </section>
   )
 }
 
-export default Ubicacion
+export default Ubi

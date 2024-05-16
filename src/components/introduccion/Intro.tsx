@@ -2,7 +2,7 @@ import React from 'react'
 
 const Intro = () => {
   return (
-    <section className="w-full h-[400px] flex justify-center items-center">
+    <section className="w-full sm:w-[45%] h-[400px] flex justify-center items-center">
       <div
         className="w-[85%] h-[250px] bg-[#D26500] flex justify-center items-center flex-col p-4"
       >

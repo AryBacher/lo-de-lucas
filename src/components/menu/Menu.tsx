@@ -1,5 +1,5 @@
 import React from 'react'
-import CardMenu from './helpers/CardMenu'
+import CardMenu from './CardMenu'
 
 const Menu = () => {
   const CardInfo = [
@@ -24,15 +24,15 @@ const Menu = () => {
   ]
   return (
     <section
-      className="w-full min-h-screen flex justify-center items-center flex-col gap-5"
+      className="w-full xl:h-[600px] h-screen flex justify-center items-center flex-col gap-5"
       id='menu'
     >
       <h1
-        className="text-[#0E0E0E] w-full h-1/6 text-2xl font-medium tracking-[.25rem] text-center title"
+        className="text-[#0E0E0E] w-full h-1/6 xl:h-auto text-2xl font-medium tracking-[.25rem] text-center title"
       >
         LOS PLATOS FAVORITOS
       </h1>
-      <div className="w-full h-4/6 flex flex-col md:flex-row items-center justify-center gap-10">
+      <div className="w-[85%] h-4/6 xl:h-auto flex flex-wrap items-center justify-center gap-24">
         {CardInfo.map((card, index) => {
           return (
             <CardMenu
@@ -46,7 +46,7 @@ const Menu = () => {
 
         })}
       </div>
-      <article className="w-full h-1/6 flex justify-center items-center pt-5 px-5">
+      <article className="w-full sm:w-[33%] h-1/6 flex justify-center items-center pt-10 lg:pt-28">
         <button
           className="w-[85%] h-[50px] bg-[#00084D] flex flex-row justify-center items-center"
         >

@@ -1,10 +1,10 @@
-import Footer from "@/components/Footer";
-import Frase from "@/components/Frase";
-import Intro from "@/components/Intro";
-import Menu from "@/components/Menu";
-import Notas from "@/components/Notas";
-import Portada from "@/components/Portada";
-import Ubicacion from "@/components/Ubicacion";
+import Footer from "@/components/footer/Footer";
+import Frase from "@/components/frase/Frase";
+import Intro from "@/components/introduccion/Intro";
+import Menu from "@/components/menu/Menu";
+import Notas from "@/components/notas/Notas";
+import Portada from "@/components/portada/Portada";
+import Ubicacion from "@/components/ubicacion/Ubi";
 
 export default function Home() {
   return (
@@ -16,7 +16,6 @@ export default function Home() {
       <Frase />
       <Ubicacion />
       <Footer />
-
     </main>
   );
 }

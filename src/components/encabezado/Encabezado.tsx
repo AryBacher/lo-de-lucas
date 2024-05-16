@@ -1,8 +1,8 @@
 "use client"
 import React, { useState } from 'react'
-import NavItems from './helpers/NavItems'
+import NavItems from './NavItems'
 import { cn } from '@/lib/utils'
-import BarsIcon from './helpers/BarsIcon'
+import BarsIcon from './BarsIcon'
 
 const Encabezado = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -29,7 +29,7 @@ const Encabezado = () => {
     }
   ]
   return (
-    <header className="bg-white w-full h-[70px] fixed z-20 flex justify-center items-center border-b-[1px] shadow-2xl border-b-white/20"
+    <header className="bg-white w-full h-[70px] fixed z-10 flex justify-center items-center border-b-[1px] shadow-2xl border-b-white/20 top-0"
       id='inicio'>
       <nav className='w-[85%] h-full flex justify-end items-center'>
         <ul className='md:flex hidden w-[75%] justify-between items-center'>
