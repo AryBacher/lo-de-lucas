@@ -29,7 +29,7 @@ const Notas = () => {
   ]
 
   return (
-    <section id='notas' className="w-full xl:h-[600px] h-screen sm:mt-16">
+    <section id='notas' className="w-full xl:h-[600px] min-h-screen sm:mt-16">
       <main className="w-full h-full flex justify-center items-center flex-col gap-5">
         <h1
           className="text-[#0E0E0E] w-full h-1/6 xl:h-auto text-2xl tracking-[.25rem] text-center title"

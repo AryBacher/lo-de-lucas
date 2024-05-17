@@ -24,7 +24,7 @@ const Menu = () => {
   ]
   return (
     <section
-      className="w-full xl:h-[600px] h-screen flex justify-center items-center flex-col gap-5"
+      className="w-full xl:h-[600px] min-h-screen flex justify-center items-center flex-col gap-5"
       id='menu'
     >
       <h1
@@ -32,7 +32,7 @@ const Menu = () => {
       >
         LOS PLATOS FAVORITOS
       </h1>
-      <div className="w-[85%] h-4/6 xl:h-auto flex flex-wrap items-center justify-center gap-24">
+      <div className="w-[85%] h-4/6 xl:h-auto flex flex-wrap items-center justify-center gap-10">
         {CardInfo.map((card, index) => {
           return (
             <CardMenu

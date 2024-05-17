@@ -24,7 +24,7 @@ const CardNotas = ({ href, title, image, description }: Props) => {
           </p>
           <a
             href={href}
-            className="w-20 h-10 bg-[#E1AF00] text-[13px] flex justify-center items-center font-bold underline p-2"
+            className="w-24 h-10 bg-[#E1AF00] text-[13px] flex justify-center items-center font-bold underline p-2"
             target="_blank">Leer más </a>
         </div>
       </div>
