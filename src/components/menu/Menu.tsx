@@ -6,25 +6,31 @@ const Menu = () => {
     {
       title: "MILANESAS",
       description: "Abundantes milanesas de todos los gustos existentes.",
-      image: "/fotos/Milanesa.png",
+      image: "/fotos/milanesas/Milanesa.png",
       href: "/milanesas",
     },
     {
       title: "PASTAS",
       description: "Abundantes milanesas de todos los gustos existentes.",
-      image: "/fotos/Pastas.png",
+      image: "/fotos/pastas/Pastas.png",
       href: "/pastas",
     },
     {
       title: "POSTRES",
       description: "Abundantes milanesas de todos los gustos existentes.",
-      image: "/fotos/Postres.png",
+      image: "/fotos/postres/Postres.png",
       href: "/postres",
     },
+    {
+      title: "Entradas",
+      description: "Abundantes milanesas de todos los gustos existentes.",
+      image: "/fotos/entradas/Entradas.png",
+      href: "/entradas",
+    }
   ]
   return (
     <section
-      className="w-full xl:h-[600px] min-h-screen flex justify-center items-center flex-col gap-5"
+      className="w-[95%] xl:h-[600px] min-h-screen flex justify-center items-center flex-col gap-5 mt-10"
       id='menu'
     >
       <h1
@@ -32,7 +38,7 @@ const Menu = () => {
       >
         LOS PLATOS FAVORITOS
       </h1>
-      <div className="w-[85%] h-4/6 xl:h-auto flex flex-wrap items-center justify-center gap-10">
+      <div className="w-full h-4/6 xl:h-auto flex items-center justify-between flex-col lg:flex-row sm:gap-10 gap-5">
         {CardInfo.map((card, index) => {
           return (
             <CardMenu
@@ -46,14 +52,14 @@ const Menu = () => {
 
         })}
       </div>
-      <article className="w-full sm:w-[33%] h-1/6 flex justify-center items-center pt-10 lg:pt-28">
+      <article className="w-full sm:w-[33%] h-1/6 flex justify-center items-center lg:pt-10">
         <button
           className="w-[85%] h-[50px] bg-[#00084D] flex flex-row justify-center items-center"
         >
           <h3 className="text-white w-[80%] text-xl tracking-widest">
             Ver todo el Menú
           </h3>
-          <picture className="w-[20%] h-full flex justify-center items-center hover:translate-x-3 transition-all">
+          <picture className="w-[20%] h-full flex justify-center items-center">
             <img src="/icons/arrow.svg" alt="arrow-right" className="w-6 h-6" />
           </picture>
         </button>

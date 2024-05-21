@@ -175,26 +175,31 @@ export default function ComidaHome() {
   })
 
   return (
-    <main className="w-full h--screen my-32 flex justify-center items-center">
+    <main className="w-full min-h-screen my-32 flex justify-center items-center">
       {
         params.comidaId === 'milanesas' ? (
-          <section className="w-full h-full flex flex-wrap justify-center items-center gap-5">
+          <section className="w-full h-full flex flex-col justify-center items-center gap-5">
             <h1 className="text-3xl title font-bold">Milanesas</h1>
-            {Milanesas}
+            <div className="w-full h-full flex flex-wrap justify-center lg:items-start items-center gap-10">
+              {Milanesas}
+            </div>
           </section>
         ) : params.comidaId === 'pastas' ? (
-          <section className="w-full h-full flex flex-wrap justify-center items-center gap-5">
+          <section className="w-full h-full flex flex-col justify-center items-center gap-5">
             <h1 className="text-3xl title font-bold">Pastas</h1>
-            {Pastas}
+            <div className="w-full h-full flex flex-wrap justify-evenly items-center gap-10">
+              {Pastas}
+            </div>
           </section>
         ) : params.comidaId === 'postres' ? (
-          <section className="w-full h-full flex flex-wrap justify-center items-center gap-5">
+          <section className="w-full h-full flex flex-col justify-center items-center gap-5">
             <h1 className="text-3xl title font-bold">Postres</h1>
-            {Postres}
+            <div className="w-full h-full flex flex-wrap justify-evenly items-center gap-10">
+              {Postres}
+            </div>
           </section>
         ) : 'No hay comida'
       }
-
     </main>
   )
 }

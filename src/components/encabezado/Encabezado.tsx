@@ -9,7 +9,7 @@ const Encabezado = () => {
   const arrItems = [
     {
       title: "Inicio",
-      href: "#inicio",
+      href: "/",
     },
     {
       title: "Platos Favoritos",

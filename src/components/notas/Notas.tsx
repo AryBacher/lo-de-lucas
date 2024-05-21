@@ -29,14 +29,14 @@ const Notas = () => {
   ]
 
   return (
-    <section id='notas' className="w-full xl:h-[600px] min-h-screen sm:mt-16">
-      <main className="w-full h-full flex justify-center items-center flex-col gap-5">
+    <section id='notas' className="w-full 2xl:h-[600px] min-h-screen flex justify-center items-center">
+      <main className="w-[95%] h-full flex justify-center items-center flex-col gap-5">
         <h1
-          className="text-[#0E0E0E] w-full h-1/6 xl:h-auto text-2xl tracking-[.25rem] text-center title"
+          className="text-[#0E0E0E] w-full h-1/6 xl:h-auto text-xl tracking-[.25rem] text-center title"
         >
           NOTAS Y ENTREVISTAS
         </h1>
-        <div className="w-full h-5/6 xl:h-auto flex justify-center items-center flex-wrap gap-10">
+        <div className="w-full h-max flex justify-between items-center flex-col lg:flex-row  gap-10">
           {CardInfo.map((card, index) => {
 
             return (

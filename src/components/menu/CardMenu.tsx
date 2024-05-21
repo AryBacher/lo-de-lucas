@@ -9,12 +9,12 @@ interface Props {
 
 const CardMenu = ({ href, title, image, description }: Props) => {
   return (
-    <div className="w-full h-[375px] sm:w-[33%] xl:w-[25%] pt-5">
+    <div className="w-full h-max sm:w-[33%] xl:w-[33%] border-[2px] border-[#00084D]">
       <picture className="w-full h-[70%]">
         <img src={image} alt={title} className="w-full" />
       </picture>
       <div
-        className="w-full h-[35%] flex justify-center items-center flex-col py-4 gap-2"
+        className="w-full h-[30%] flex justify-center items-center flex-col p-4 gap-2 border-t-[2px] border-[#00084D]"
       >
         <div className="w-full h-1/3 flex justify-start items-center">
           <h2 className="text-start text-2xl font-bold">{title}</h2>
