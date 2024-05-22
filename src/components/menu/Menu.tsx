@@ -30,7 +30,7 @@ const Menu = () => {
   ]
   return (
     <section
-      className="w-[95%]  h-[1200px] lg:h-[600px]  flex justify-center items-center flex-col "
+      className="w-[95%] h-[2000px] lg:h-[600px] flex justify-center items-center flex-col "
       id='menu'
     >
       <h1
@@ -52,7 +52,7 @@ const Menu = () => {
 
         })}
       </div>
-      <article className="w-full sm:w-[33%] h-1/6 flex justify-center items-center lg:pt-10">
+      <article className="w-full sm:w-[33%] flex justify-center items-center lg:pt-10">
         <button
           className="w-[85%] lg:w-[65%] h-[50px] bg-[#00084D] flex flex-row justify-center items-center "
         >
