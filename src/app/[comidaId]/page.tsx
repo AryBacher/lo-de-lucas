@@ -70,51 +70,46 @@ export default function ComidaHome() {
   const PostresArr = [
     {
       id: 1,
-      title: 'Flan',
-      image: "/fotos/postres/FlanCasero.jpg"
-    },
-    {
-      id: 2,
       title: 'Chocotorta',
       image: "/fotos/postres/Chocotorta.png"
     },
     {
-      id: 3,
+      id: 2,
       title: 'Tiramisú',
       image: "/fotos/postres/Tiramisu.png"
     },
     {
-      id: 4,
+      id: 3,
       title: 'Cheesecake',
       image: "/fotos/postres/CheeseCake.png"
     },
     {
-      id: 5,
+      id: 4,
       title: 'Rogel',
       image: "/fotos/postres/Rogel.png"
     },
     {
-      id: 6,
+      id: 5,
       title: 'Brownie',
       image: "/fotos/postres/Brownie.png"
     },
     {
-      id: 7,
+      id: 6,
       title: 'Balcarce',
       image: "/fotos/postres/Balcarce.png"
     },
     {
-      id: 8,
+      id: 7,
       title: 'Selva negra',
       image: "/fotos/postres/SelvaNegra.png"
     },
     {
-      id: 9,
+      id: 8,
       title: 'Torta Alfajor',
       image: "/fotos/postres/Torta_Alfajor.png"
     },
     {
-      id: 10,
+      id: 9,
       title: 'Tres Leches',
       image: "/fotos/postres/TresLeches.png"
     }
