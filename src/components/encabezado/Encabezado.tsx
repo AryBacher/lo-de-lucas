@@ -32,18 +32,18 @@ const Encabezado = () => {
     <header className="bg-white w-full h-[70px] fixed z-20 flex justify-center items-center border-b-[1px] shadow-2xl border-b-white/20 top-0"
       id='inicio'>
       <nav className='w-[85%] h-full flex justify-end items-center'>
-        <ul className='md:flex hidden w-[75%] justify-between items-center'>
+        <ul className='lg:flex hidden w-[75%] justify-between items-center'>
           {arrItems.map((item, index) => (
             <NavItems key={index} title={item.title} href={item.href} />
           ))}
         </ul>
       </nav>
-      <div className="relative md:hidden block z-50">
+      <div className="relative lg:hidden block z-50">
         <BarsIcon isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
       <aside
         className={cn(
-          "fixed top-0 left-0 w-[80%] h-screen bg-white md:hidden flex -translate-x-full transition-all duration-500 justify-between items-center",
+          "fixed top-0 left-0 w-[80%] h-screen bg-white lg:hidden flex -translate-x-full transition-all duration-500 justify-between items-center",
           {
             "translate-x-0 transition-all duration-500": isOpen,
           }
