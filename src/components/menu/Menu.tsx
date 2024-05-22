@@ -30,11 +30,11 @@ const Menu = () => {
   ]
   return (
     <section
-      className="w-[95%] xl:h-[600px] min-h-screen flex justify-center items-center flex-col gap-5 mt-10"
+      className="w-[95%]  h-[1200px] lg:h-[600px]  flex justify-center items-center flex-col "
       id='menu'
     >
       <h1
-        className="text-[#0E0E0E] w-full h-1/6 xl:h-auto text-2xl font-medium tracking-[.25rem] text-center title"
+        className="text-[#0E0E0E] w-full xl:h-auto text-2xl font-semibold tracking-[.25rem] text-center title"
       >
         LOS PLATOS FAVORITOS
       </h1>
@@ -54,13 +54,13 @@ const Menu = () => {
       </div>
       <article className="w-full sm:w-[33%] h-1/6 flex justify-center items-center lg:pt-10">
         <button
-          className="w-[85%] h-[50px] bg-[#00084D] flex flex-row justify-center items-center"
+          className="w-[85%] lg:w-[65%] h-[50px] bg-[#00084D] flex flex-row justify-center items-center "
         >
-          <h3 className="text-white w-[80%] text-xl tracking-widest">
+          <h3 className="text-white w-[80%] text-xl">
             Ver todo el Menú
           </h3>
-          <picture className="w-[20%] h-full flex justify-center items-center">
-            <img src="/icons/arrow.svg" alt="arrow-right" className="w-6 h-6" />
+          <picture className="w-[20%]  h-full flex justify-center items-center">
+            <img src="/icons/arrow.svg" alt="arrow-right" className="w-10 h-10" />
           </picture>
         </button>
       </article>

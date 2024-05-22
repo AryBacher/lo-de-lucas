@@ -8,7 +8,7 @@ import Ubicacion from "@/components/ubicacion/Ubi";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col justify-center items-center gap-20">
+    <main className="flex min-h-screen flex-col justify-center items-center ">
       <Portada />
       <Intro />
       <Menu />
