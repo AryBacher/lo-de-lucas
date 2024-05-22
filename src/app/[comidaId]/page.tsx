@@ -130,7 +130,7 @@ export default function ComidaHome() {
       {
         params.comidaId === 'milanesas' ? (
           <section className="w-full h-full flex flex-col justify-center items-center gap-5">
-            <h1 className="text-3xl title font-bold">Milanesas</h1>
+            <h1 className="text-3xl title font-bold not-italic">Milanesas</h1>
             <div className="w-full h-full flex flex-wrap justify-center lg:items-start items-center gap-5">
               {Milanesas}
             </div>
