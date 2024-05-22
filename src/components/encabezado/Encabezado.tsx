@@ -9,23 +9,23 @@ const Encabezado = () => {
   const arrItems = [
     {
       title: "Inicio",
-      href: "/",
+      href: "/#inicio",
     },
     {
       title: "Platos Favoritos",
-      href: "#menu",
+      href: "/#menu",
     },
     {
       title: "Notas",
-      href: "#notas",
+      href: "/#notas",
     },
     {
       title: "Ubicación",
-      href: "#ubicacion",
+      href: "/#ubicacion",
     },
     {
       title: "Testimonios",
-      href: "#testimonios",
+      href: "/#testimonios",
     }
   ]
   return (

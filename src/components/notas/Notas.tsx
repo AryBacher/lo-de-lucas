@@ -8,7 +8,7 @@ const Notas = () => {
         'El restaurante de Escobar que está entre los mejores del AMBA',
       description:
         "El local de Lucas Deonato y Natalia Estanguet se transformó en un boom gastronómico...",
-      image: "/fotos/LoDeLucas.png",
+      image: "/fotos/notas/Natalia_Lucas.png",
       href: "https://zonales.com/bodegon-lucas-restaurante-escobar-mejotres-amba/",
     },
     {
@@ -16,14 +16,14 @@ const Notas = () => {
         "El bodegón que hace milanesas para 10 personas",
       description:
         "Cuando se elige a un bodegón para ir a comer se da por sentado que las porciones son grandes...",
-      image: "/fotos/LoDeLucas.png",
+      image: "/fotos/notas/LoDeLucas.png",
       href: "https://thewinetime.com.ar/como-es-lo-de-lucas-el-bodegon-que-hace-milanesas-para-10-personas-y-tortas-de-10-kilos/",
     },
     {
       title: "Un restaurante de Escobar ganó un premio al mejor bodegon",
       description:
         "La tercera edición de las estatuillas más populares de la industria gastronómica argentina ...",
-      image: "/fotos/LoDeLucas.png",
+      image: "/fotos/notas/LoDeLucas2.png",
       href: "https://infogei.com/nota/45334/un-restaurante-de-escobar-gano-un-premio-al-mejor-bodegon/",
     },
   ]
