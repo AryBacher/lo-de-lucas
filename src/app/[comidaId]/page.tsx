@@ -54,12 +54,12 @@ export default function ComidaHome() {
     {
       id: 1,
       title: 'Ñoquis con estofado',
-      image: "/fotos/Estofado.png"
+      image: "/fotos/pastas/Estofado.png"
     },
     {
       id: 2,
       title: 'Canelones de verdura con estofado',
-      image: "/fotos/Canelones.png"
+      image: "/fotos/pastas/Canelones.png"
     },
   ]
   const Pastas = PastasArr.map((item) => {
