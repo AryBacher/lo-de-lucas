@@ -30,7 +30,7 @@ const Menu = () => {
   ]
   return (
     <section
-      className="w-[95%] h-[2000px] lg:h-[600px] flex justify-center items-center flex-col "
+      className="w-[95%] h-[1700px] lg:h-[600px] flex justify-center items-center flex-col gap-4"
       id='menu'
     >
       <h1
@@ -38,7 +38,7 @@ const Menu = () => {
       >
         LOS PLATOS FAVORITOS
       </h1>
-      <div className="w-full h-4/6 xl:h-auto flex items-center justify-between flex-col lg:flex-row sm:gap-10 gap-5">
+      <div className="w-full h-auto flex items-center justify-between flex-col lg:flex-row sm:gap-10 gap-5">
         {CardInfo.map((card, index) => {
           return (
             <CardMenu
