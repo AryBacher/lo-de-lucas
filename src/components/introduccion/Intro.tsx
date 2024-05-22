@@ -4,7 +4,7 @@ const Intro = () => {
   return (
     <section className="w-full sm:w-[45%] h-[300px] flex justify-center items-center">
       <div
-        className="w-[95%] h-max bg-[#D26500] flex justify-center items-center flex-col p-4"
+        className="w-[95%] h-max bg-[#D26500] flex justify-center items-center flex-col p-4 gap-2"
       >
         <div className="w-full h-1/3 flex justify-center items-center flex-col">
           <h1 className="text-3xl text-white title">LO DE LUCAS</h1>
