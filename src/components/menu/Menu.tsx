@@ -6,7 +6,7 @@ const Menu = () => {
     {
       title: "MILANESAS",
       description: "Abundantes milanesas de todos los gustos existentes.",
-      image: "/fotos/milanesas/Milanesa.png",
+      image: "/fotos/milanesas/Milanesa.webp",
       href: "/milanesas",
     },
     {
