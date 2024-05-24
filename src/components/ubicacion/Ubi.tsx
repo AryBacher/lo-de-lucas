@@ -32,7 +32,7 @@ const Ubi = () => {
       id='ubicacion'>
       <div className='w-full h-1/6 flex justify-center items-center flex-col gap-3'>
         <h1 className='text-2xl title text-black'>Encontranos</h1>
-        <p className={`${poppins.className} w-[50%] text-container text-[#7C7C7C] text-sm text-center`}>Visita nuestro Bodegón para vivir la experiencia de comer en Lo de Lucas en carne propia.</p>
+        <p className={`${poppins.className} w-[85%] lg:w-[50%] text-container text-[#7C7C7C] text-sm text-center`}>Visita nuestro Bodegón para vivir la experiencia de comer en Lo de Lucas en carne propia.</p>
       </div>
       <div className='w-full h-4/6 flex justify-center items-center flex-col lg:flex-row gap-5'>
         <div className='lg:w-[40%] w-full h-full flex justify-center items-center order-2 lg:order-1 '>
@@ -47,7 +47,7 @@ const Ubi = () => {
                 </li>
               ))
             }
-            <Link href="https://www.google.com.ar/maps/place/Lo+De+Lucas+Bodegón/@-34.3522961,-58.7967762,17z/data=!3m1!4b1!4m6!3m5!1s0x95bb61b77bef62b9:0x346fd3d5c84c5ebb!8m2!3d-34.3522961!4d-58.7941959!16s%2Fg%2F11c74gtkx6?entry=ttu" className={`${poppins.className} w-[70%] h-12 bg-[#AD00FF] text-white rounded-lg flex flex-row justify-center items-center gap-2`}>
+            <Link href="https://www.google.com.ar/maps/place/Lo+De+Lucas+Bodegón/@-34.3522961,-58.7967762,17z/data=!3m1!4b1!4m6!3m5!1s0x95bb61b77bef62b9:0x346fd3d5c84c5ebb!8m2!3d-34.3522961!4d-58.7941959!16s%2Fg%2F11c74gtkx6?entry=ttu" className={`${poppins.className} lg:w-[70%] md:w-[60%] w-full h-12 bg-[#AD00FF] text-white rounded-lg flex flex-row justify-evenly lg:justify-center items-center gap-2 `}>
               Ver en Google Maps
               <svg width="26" height="26" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.5 31.5L13.5 28.35L6.525 31.05C6.025 31.25 5.5625 31.194 5.1375 30.882C4.7125 30.57 4.5 30.151 4.5 29.625V8.625C4.5 8.3 4.594 8.0125 4.782 7.7625C4.97 7.5125 5.226 7.325 5.55 7.2L13.5 4.5L22.5 7.65L29.475 4.95C29.975 4.75 30.4375 4.8065 30.8625 5.1195C31.2875 5.4325 31.5 5.851 31.5 6.375V27.375C31.5 27.7 31.4065 27.9875 31.2195 28.2375C31.0325 28.4875 30.776 28.675 30.45 28.8L22.5 31.5ZM21 27.825V10.275L15 8.175V25.725L21 27.825ZM24 27.825L28.5 26.325V8.55L24 10.275V27.825ZM7.5 27.45L12 25.725V8.175L7.5 9.675V27.45Z" fill="#F3F3F3" />
@@ -56,7 +56,7 @@ const Ubi = () => {
             </Link >
           </ul>
         </div>
-        <div className='lg:w-[70%] w-full h-[300px] shadow-lg border-[1px] border-[#AD00FF] bg-gray-300 order-1 lg:order-2' style={{ backgroundImage: 'url("/fotos/ubicacion.png")' }}>
+        <div className='lg:w-[70%]  w-full lg:h-[300px] h-[200px] shadow-lg border-[1px] border-[#AD00FF] bg-gray-300 order-1 lg:order-2' style={{ backgroundImage: 'url("/fotos/ubicacion.png")' }}>
 
           <picture>
             <Link

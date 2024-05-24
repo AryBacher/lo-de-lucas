@@ -29,7 +29,7 @@ const Encabezado = () => {
     }
   ]
   return (
-    <header className="bg-white w-full h-[70px] fixed z-30 flex justify-end items-center border-b-[1px] shadow-xl border-b-white/20 top-0 px-10"
+    <header className="bg-white w-full h-[70px] fixed z-20 flex justify-end items-center border-b-[1px] shadow-xl border-b-white/20 top-0 lg:px-10 px-4"
       id='inicio'>
       <nav className='w-[65%] h-full flex justify-end items-center'>
         <ul className='lg:flex hidden w-[75%] justify-between items-center'>
