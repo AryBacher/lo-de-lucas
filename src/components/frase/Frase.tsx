@@ -10,7 +10,7 @@ const Frase = () => {
       >
         <div className='w-full h-full relative flex justify-center items-center px-5 bg-black opacity-60 '>
         </div>
-        <h1 className='text-white text-3xl text-center z-20 absolute'>
+        <h1 className='text-white text-3xl text-center z-20 absolute px-10'>
           En lo de lucas somos especialistas en platos enormes
         </h1>
       </picture>
