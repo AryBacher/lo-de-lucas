@@ -30,15 +30,15 @@ const Menu = () => {
   ]
   return (
     <section
-      className="w-[75%] h-[1700px] lg:h-[600px] flex justify-center items-center flex-col gap-6"
+      className="w-[75%] h-max flex justify-center items-center flex-col gap-6"
       id='menu'
     >
       <h1
-        className="text-[#0E0E0E] w-full xl:h-auto text-2xl font-semibold tracking-[.25rem] text-center title"
+        className="text-[#0E0E0E] w-full text-2xl font-semibold tracking-[.25rem] text-center title"
       >
         LOS PLATOS FAVORITOS
       </h1>
-      <div className="w-full h-auto flex items-center justify-between flex-col lg:flex-row sm:gap-10 gap-5">
+      <div className="w-full h-max flex items-center justify-center flex-wrap sm:gap-10 gap-5">
         {CardInfo.map((card, index) => {
           return (
             <CardMenu
@@ -52,14 +52,14 @@ const Menu = () => {
 
         })}
       </div>
-      <article className="w-full sm:w-[33%] flex justify-center items-center lg:pt-10">
+      <article className="w-full sm:w-[33%] flex justify-center items-center ">
         <button
           className="w-[85%] lg:w-[65%] h-[50px] bg-[#00084D] flex flex-row justify-center items-center "
         >
           <h3 className="text-white w-[80%] text-xl">
             Ver todo el Menú
           </h3>
-          <picture className="w-[20%]  h-full flex justify-center items-center">
+          <picture className="w-[20%] h-full flex justify-center items-center">
             <img src="/icons/arrow.svg" alt="arrow-right" className="w-10 h-10" />
           </picture>
         </button>
