@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
@@ -26,9 +27,9 @@ const Footer = () => {
       <ul className='w-[85%] flex justify-between sm:justify-evenly items-center'>
         {redesItems.map((item, index) => (
           <li key={index}>
-            <a href={item.link} target='_blank'>
+            <Link href={item.link} target='_blank'>
               <Image height={30} width={30} src={item.icon} alt='icon' />
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
@@ -37,7 +38,7 @@ const Footer = () => {
           © 2024 Lo De Lucas. Todos los derechos reservados.
         </small>
         <small className="text-center text-white/60 text-sm font-normal">
-          Diseñado y desarrollado por <a href="https://synera.com.ar" target='_blank' className='underline text-[#84E9FF]'>Synera</a>
+          Diseñado y desarrollado por <Link href="https://synera.com.ar" target='_blank' className='underline text-[#84E9FF]'>Synera</Link>
         </small>
       </div>
     </footer>

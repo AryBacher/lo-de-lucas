@@ -11,37 +11,37 @@ export default function ComidaHome() {
     {
       id: 1,
       title: 'Milanesa calabresa',
-      image: "/fotos/milanesas/MilaCalabresa.png"
+      image: "/fotos/milanesas/MilaCalabresa.webp"
     },
     {
       id: 2,
       title: 'Milanesa para 12 personas',
-      image: "/fotos/milanesas/Mila_LoDeLucas.png"
+      image: "/fotos/milanesas/Mila_LoDeLucas.webp"
     },
     {
       id: 3,
       title: 'Sandwich de milanesa',
-      image: "/fotos/milanesas/Sandwich.png"
+      image: "/fotos/milanesas/Sandwich.webp"
     },
     {
       id: 4,
       title: 'Milanesa a la napolitana',
-      image: "/fotos/milanesas/MilaNapo.png"
+      image: "/fotos/milanesas/MilaNapo.webp"
     },
     {
       id: 5,
       title: 'Milanesa fugazzeta',
-      image: "/fotos/milanesas/Fugazzeta.png"
+      image: "/fotos/milanesas/Fugazzeta.webp"
     },
     {
       id: 6,
       title: 'Milanesa con fideos',
-      image: "/fotos/milanesas/Milanesa.png"
+      image: "/fotos/milanesas/Milanesa.webp"
     },
     {
       id: 7,
       title: 'Milanesa cuatro quesos',
-      image: "/fotos/milanesas/MilaQuesos.png"
+      image: "/fotos/milanesas/MilaQuesos.webp"
     },
   ]
   const Milanesas = MilanesasArr.map((item) => {
@@ -106,12 +106,12 @@ export default function ComidaHome() {
     {
       id: 8,
       title: 'Torta Alfajor',
-      image: "/fotos/postres/Torta_Alfajor.png"
+      image: "/fotos/postres/Torta_Alfajor.webp"
     },
     {
       id: 9,
       title: 'Tres Leches',
-      image: "/fotos/postres/TresLeches.png"
+      image: "/fotos/postres/TresLeches.webp"
     }
   ]
   const Postres = PostresArr.map((item) => {

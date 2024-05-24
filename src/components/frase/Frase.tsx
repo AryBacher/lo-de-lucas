@@ -1,19 +1,21 @@
-import Image from 'next/image'
-import React from 'react'
+import React from 'react';
 
 const Frase = () => {
   return (
-    <article className='w-full h-[450px] bg-black flex justify-center items-center my-14'>
-      <div className='h-[60%] w-full bg-black absolute z-10 opacity-70 flex justify-center items-center px-5'>
-        <h1 className='text-white title text-3xl text-center'>En lo de lucas somos especialistas en platos enormes</h1>
-      </div>
-      <picture className=' w-full h-full opacity-35'>
-        <Image src={"/fotos/fotoFrase.png"} width={500} height={200} alt='Lo De Lucas - Bodegón' className='w-full h-full object-cover  '></Image>
+    <article
+      className='w-full h-[450px] bg-cover bg-center flex justify-center items-center my-14 '
+      style={{ backgroundImage: 'url("/fotos/fotoFrase.png")' }}
+    >
+      <picture className='w-full h-[60%] flex justify-center items-center relative '
+      >
+        <div className='w-full h-full relative flex justify-center items-center px-5 bg-black opacity-60 '>
+        </div>
+        <h1 className='text-white text-3xl text-center z-20 absolute'>
+          En lo de lucas somos especialistas en platos enormes
+        </h1>
       </picture>
+    </article>
+  );
+};
 
-
-    </article >
-  )
-}
-
-export default Frase
+export default Frase;

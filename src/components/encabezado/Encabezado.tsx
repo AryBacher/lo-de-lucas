@@ -29,9 +29,9 @@ const Encabezado = () => {
     }
   ]
   return (
-    <header className="bg-white w-full h-[70px] fixed z-20 flex justify-center items-center border-b-[1px] shadow-xl border-b-white/20 top-0"
+    <header className="bg-white w-full h-[70px] fixed z-30 flex justify-end items-center border-b-[1px] shadow-xl border-b-white/20 top-0 px-10"
       id='inicio'>
-      <nav className='w-[85%] h-full flex justify-end items-center'>
+      <nav className='w-[65%] h-full flex justify-end items-center'>
         <ul className='lg:flex hidden w-[75%] justify-between items-center'>
           {arrItems.map((item, index) => (
             <NavItems key={index} title={item.title} href={item.href} />

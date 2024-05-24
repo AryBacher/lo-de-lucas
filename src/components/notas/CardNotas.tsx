@@ -1,4 +1,6 @@
+import { Poppins } from 'next/font/google'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 interface Props {
@@ -8,25 +10,30 @@ interface Props {
   description: string
 }
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
 
 const CardNotas = ({ href, title, image, description }: Props) => {
   return (
-    <div className="w-full sm:w-[50%] lg:w-[40%] 2xl:w-[25%] 2xl:h-[350px] h-[400px] flex justify-center items-center flex-col border-[3px] border-[#E1AF00]">
-      <picture className="w-full h-[55%]">
-        <Image width={400} height={400} src={image} alt='Bodeón Lo De Lucas' className="w-full h-full" />
+    <div className="w-full md:w-[50%] lg:w-[30%] 2xl:w-[25%] h-max flex justify-center items-center flex-col gap-3 rounded-lg">
+      <picture className="w-full ">
+        <Image width={400} height={400} src={image} alt='Bodeón Lo De Lucas' className="rounded-2xl w-full h-full" />
       </picture>
-      <div className="w-full h-[45%] flex justify-start items-center flex-col gap-2 p-3">
-        <div className="w-full flex justify-start items-center">
+      <div className="w-full h-[45%] flex justify-start items-center flex-col gap-2 ">
+        <div className="w-full h-1/4 flex justify-start items-center">
           <h2 className="w-full text-start text-xl font-bold ">{title}</h2>
         </div>
-        <div className="w-full h-full flex justify-center items-end flex-row gap-4">
-          <p className="w-[85%]  text-container text-[#7C7C7C] text-sm text-start">
+        <div className="w-full h-3/4 flex justify-center items-start flex-col gap-4">
+          <p className={`${poppins.className} w-full text-container text-[#7C7C7C] text-base text-start font-oswald`}>
             {description}
           </p>
-          <a
+          <Link
             href={href}
-            className="w-24 h-10 bg-[#E1AF00] text-[13px] flex justify-center items-center font-bold underline p-2"
-            target="_blank">Leer más </a>
+            className="w-full h-10 bg-[#E1AF00] text-base rounded-xl flex justify-center items-center font-semibold p-2"
+          >Leer más </Link>
         </div>
       </div>
     </div>

@@ -30,7 +30,7 @@ const Menu = () => {
   ]
   return (
     <section
-      className="w-[95%] h-[1700px] lg:h-[600px] flex justify-center items-center flex-col gap-6"
+      className="w-[75%] h-[1700px] lg:h-[600px] flex justify-center items-center flex-col gap-6"
       id='menu'
     >
       <h1
