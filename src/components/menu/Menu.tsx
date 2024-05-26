@@ -1,6 +1,11 @@
 import React from 'react'
 import CardMenu from './CardMenu'
+import { Poppins } from 'next/font/google'
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 const Menu = () => {
   const CardInfo = [
     {
@@ -33,11 +38,10 @@ const Menu = () => {
       className="w-[75%] h-max flex justify-center items-center flex-col gap-6"
       id='menu'
     >
-      <h1
-        className="text-[#0E0E0E] w-full text-2xl font-semibold tracking-[.25rem] text-center title"
-      >
-        LOS PLATOS FAVORITOS
-      </h1>
+      <div className='w-full h-1/6 flex justify-center items-center flex-col gap-2'>
+        <h1 className='text-[#00084D] w-full xl:h-auto text-3xl font-semibold  text-center'>LOS PLATOS FAVORITOS</h1>
+        <p className={`${poppins.className} w-[85%] lg:w-[50%] text-container text-[#7C7C7C] text-sm text-center`}>Visita nuestro Bodegón para vivir la experiencia de comer en Lo de Lucas en carne propia.</p>
+      </div>
       <div className="w-full h-max flex items-center justify-center flex-wrap sm:gap-10 gap-5">
         {CardInfo.map((card, index) => {
           return (

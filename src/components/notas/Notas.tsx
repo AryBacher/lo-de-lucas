@@ -1,5 +1,11 @@
 import React from 'react'
 import CardNotas from './CardNotas'
+import { Poppins } from 'next/font/google';
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 const Notas = () => {
   const CardInfo = [
@@ -39,11 +45,15 @@ const Notas = () => {
   return (
     <section id='notas' className="w-full h-max flex justify-center items-center pt-10">
       <main className="lg:w-[85%] w-[70%] flex justify-center items-center flex-col gap-6">
-        <h1
-          className="text-[#0E0E0E] w-full xl:h-auto text-2xl font-semibold tracking-[.25rem] text-center title"
-        >
-          NOTAS Y ENTREVISTAS
-        </h1>
+
+        <div className='w-full flex flex-col justify-center items-center gap-2'>
+          <h1
+            className="text-[#E1AF00] w-full xl:h-auto text-3xl font-semibold  text-center "
+          >
+            NOTAS Y ENTREVISTAS
+          </h1>
+          <p className={`${poppins.className} w-[40%] text-sm text-[#7C7C7C] hidden md:block text-center`}>Escuche directamente del propietario de nuestro restaurante su visión y pasión por brindar una experiencia gastronómica excepcional.</p>
+        </div>
         <div className="w-full h-max flex justify-center items-center flex-col flex-wrap lg:flex-row gap-10">
           {CardInfo.map((card, index) => {
 

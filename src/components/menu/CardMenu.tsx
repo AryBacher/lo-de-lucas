@@ -25,7 +25,7 @@ const CardMenu = ({ href, title, image, description }: Props) => {
           <p className="w-[75%] text-start text-container text-[#7C7C7C]">
             {description}
           </p>
-          <Link href={href} className="w-12 h-12 bg-[#00084D]">
+          <Link href={href} className="w-12 h-12 bg-[#00084D] rounded-lg">
             <picture className="w-full h-full flex justify-center items-center">
               <Image
                 width={24}
