@@ -1,6 +1,7 @@
 "use client"
 import Comida from "@/components/helpers/Comida";
 import { useParams } from "next/navigation";
+import { title } from "process";
 
 
 export default function ComidaHome() {
@@ -119,6 +120,44 @@ export default function ComidaHome() {
       <Comida key={item.id} title={item.title} image={item.image} />
     )
   })
+
+  const EntradasArr = [
+    {
+      id: 1,
+      title: 'Bastones de muzzarella',
+      image: "/fotos/entradas/Muzza.webp"
+    },
+    {
+      id: 2,
+      title: 'Papas con cheddar y panceta',
+      image: "/fotos/entradas/PapasCheddar.webp"
+    },
+    {
+      id: 3,
+      title: 'Rabas',
+      image: "/fotos/entradas/Rabas.webp"
+    },
+    {
+      id: 4,
+      title: 'tortilla de papas',
+      image: "/fotos/entradas/Tortilla.webp"
+    },
+    {
+      id: 5,
+      title: 'Omelette',
+      image: "/fotos/entradas/Omelette.webp"
+    },
+    {
+      id: 6,
+      title: 'Buñuelos de espinaca',
+      image: "/fotos/entradas/Bunuelos.webp"
+    },
+    {
+      id: 7,
+      title: 'Revuelto de gramajo',
+      image: "/fotos/entradas/Revuelto.webp"
+    },
+  ]
 
   return (
     <main className="w-full min-h-screen my-32 flex justify-start items-start">

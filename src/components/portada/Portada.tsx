@@ -7,7 +7,7 @@ const Portada = () => {
         <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover opacity-50 hidden md:block">
           <source src="/videos/Video2.mp4" type="video/mp4" className=''></source>
         </video>
-        <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover opacity-50 block md:hidden">
+        <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover block md:hidden">
           <source src="/videos/Video_Prueba.mp4" type="video/mp4" className=''></source>
         </video>
       </div>

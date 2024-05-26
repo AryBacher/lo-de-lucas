@@ -1,6 +1,12 @@
+import { Poppins } from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 interface Props {
   title: string
@@ -12,7 +18,7 @@ interface Props {
 const CardMenu = ({ href, title, image, description }: Props) => {
   return (
     <div className="lg:w-[33%] w-full h-max border-[1px] border-[#00084D] rounded-lg">
-      <picture className="w-full h-[70%]">
+      <picture className="w-full h-[70%] rounded-t-md">
         <Image width={300} height={300} src={image} alt={title} className="w-full  rounded-t-md" />
       </picture>
       <div
@@ -22,7 +28,7 @@ const CardMenu = ({ href, title, image, description }: Props) => {
           <h2 className="text-start text-2xl font-bold">{title}</h2>
         </div>
         <div className="w-full h-2/3 flex justify-between items-start flex-row">
-          <p className="w-[75%] text-start text-container text-[#7C7C7C]">
+          <p className={`${poppins.className} w-[75%] text-start text-container text-[#7C7C7C]`}>
             {description}
           </p>
           <Link href={href} className="w-12 h-12 bg-[#00084D] rounded-lg">
