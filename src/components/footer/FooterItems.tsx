@@ -33,7 +33,8 @@ const FooterItems = () => {
   ]
 
   return (
-    <ul className='xl:w-[30%] w-full flex justify-center items-center flex-col gap-4'>
+    <ul className='xl:w-[30%] w-full flex justify-center items-start flex-col gap-4'>
+      <label className={`${poppins.className} text-white font-bold`}>Horarios</label>
       {arrItems.map((item, index) => (
         <li key={index} className='w-full flex flex-row justify-start items-center gap-3'>
           <div className='w-[10%]'>
