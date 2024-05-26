@@ -75,11 +75,12 @@ const Footer = () => {
           ))}
         </ul >
       </div>
+      <label className={`${poppins.className} text-white font-semibold mt-5`}>Pedí al 0348 443-0751 y vení a retirar al local</label>
       <div className="w-[85%] md:w-[47%] h-max flex items-center justify-center border-t-[1px] border-white/20 flex-col pb-4">
-        <small className="text-center text-white text-sm font-bold mt-2 ">
+        <small className={`${poppins.className} text-center text-white text-sm font-bold mt-2 `}>
           © 2024 Lo De Lucas. Todos los derechos reservados.
         </small>
-        <small className="text-center text-white/60 text-sm font-normal ">
+        <small className={`${poppins.className} text-center text-white/60 text-sm font-normal `}>
           Diseñado y desarrollado por <Link href="https://synera.com.ar" target='_blank' className='underline text-[#84E9FF]'>Synera</Link>
         </small>
       </div>

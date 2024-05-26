@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import NavItems from './NavItems'
 import { cn } from '@/lib/utils'
 import BarsIcon from './BarsIcon'
+import { useParams } from 'next/navigation'
 
 const Encabezado = () => {
   const arrItems = [
@@ -28,6 +29,8 @@ const Encabezado = () => {
     }
   ]
   const [header, setHeader] = useState(true)
+  const params = useParams()
+  const searchId = params.id
 
   const scrollHandler = () => {
     if (window.scrollY >= 80) {
@@ -46,12 +49,12 @@ const Encabezado = () => {
 
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <header className={header ? " w-full h-[70px] fixed z-30 flex justify-end items-center text-white top-0 lg:px-10 px-4 transition-all" : "bg-white w-full h-[70px] fixed z-30 flex justify-end items-center border-b-[1px] shadow-xl border-b-white/20 top-0 lg:px-10 px-4 transition-all"}
+    <header className={header ? " w-full h-[70px] fixed z-30 flex justify-end items-center  top-0 lg:px-10 px-5 transition-all" : "bg-white w-full h-[70px] fixed z-30 flex justify-end items-center border-b-[1px] shadow-xl border-b-white/20 top-0 lg:px-10 px-4 transition-all"}
       id='inicio'>
       <nav className='w-[65%] h-full flex justify-end items-center'>
         <ul className='xl:flex hidden w-[75%] justify-between items-center'>
           {arrItems.map((item, index) => (
-            <NavItems key={index} title={item.title} href={item.href} />
+            <NavItems key={index} title={item.title} href={item.href} className={header ? 'text-white' : ''} />
           ))}
         </ul>
       </nav>

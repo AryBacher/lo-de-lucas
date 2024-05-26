@@ -1,3 +1,7 @@
-<svg width="24" height="24" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.41637 10.6706C3.07471 10.6706 1.08221 8.68731 1.71138 2.3623H22.6122C28.0764 2.44314 32.4664 7.31147 32.4164 13.1648C32.3664 19.0181 27.8955 24.0315 22.4305 23.9498H11.6714L10.113 28.9856C9.19637 31.7665 6.76721 31.4281 1.70304 31.4281L5.63304 15.9465H22.1164C23.213 15.9465 24.6639 15.1773 24.6639 13.1615C24.6639 11.3248 23.2139 10.6715 22.1189 10.6706H7.41637Z" stroke="#F3F3F3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-truck-delivery" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+  <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+  <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
+  <path d="M3 9l4 0" />
 </svg>
