@@ -64,7 +64,7 @@ const Menu = () => {
           target='_blank'
           className="w-full lg:w-[65%] h-[50px] bg-[#00084D] flex flex-row justify-center items-center gap-4 rounded-xl"
         >
-          <h3 className={`${poppins.className} text-white text-base`}>
+          <h3 className={`${poppins.className} text-white text-base font-medium`}>
             Ver Menú
           </h3>
           <picture className=" h-full flex justify-center items-center">

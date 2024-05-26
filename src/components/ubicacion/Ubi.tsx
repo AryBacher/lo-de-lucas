@@ -28,20 +28,20 @@ const Ubi = () => {
   ]
 
   return (
-    <section className='w-[90%] md:w-[50%] xl:w-[90%] flex justify-center items-center flex-col gap-5 py-10'
+    <section className='w-[85%] md:w-[50%] xl:w-[85%] flex justify-center items-center flex-col gap-5 py-10'
       id='ubicacion'>
       <div className='w-full h-1/6 flex justify-center items-center flex-col gap-2'>
         <h1 className='text-[#AD00FF] w-full xl:h-auto text-3xl font-semibold  text-center'>ENCONTRANOS</h1>
         <p className={`${poppins.className} w-[85%] lg:w-[50%] text-container text-[#7C7C7C] text-sm text-center hidden md:block`}>Visita nuestro Bodegón para vivir la experiencia de comer en Lo de Lucas en carne propia.</p>
       </div>
       <div className='w-full h-4/6 flex justify-center items-center flex-col lg:flex-row gap-5'>
-        <div className='lg:w-[40%] w-full h-full flex justify-center items-center order-2 lg:order-1 '>
-          <ul className='w-full h-full flex flex-col items-start justify-start gap-4'>
+        <div className='lg:w-[30%] w-full h-full flex justify-center items-center order-2 lg:order-1 '>
+          <ul className='w-full h-full flex flex-col items-start justify-start gap-4 '>
             {
               items.map((item, index) => (
-                <li key={index} className='flex justify-start items-center w-full flex-row gap-2'>
+                <li key={index} className='w-full flex justify-start items-center flex-row gap-2'>
                   {item.icon}
-                  <h4 className='text-container text-black text-base flex flex-col'>
+                  <h4 className='w-full text-container text-black text-base flex flex-col'>
                     <label className='font-semibold text-base'>{item.label}</label>
                     {item.title}</h4>
                 </li>
@@ -57,7 +57,6 @@ const Ubi = () => {
           </ul>
         </div>
         <div className='lg:w-[70%]  w-full lg:h-[300px] 2xl:h-[450px] h-[200px] shadow-lg border-[1px] border-[#AD00FF] bg-gray-300 order-1 lg:order-2' style={{ backgroundImage: 'url("/fotos/ubicacion.png")' }}>
-
           <picture>
             <Link
               href="https://www.google.com.ar/maps/place/Lo+De+Lucas+Bodegón/@-34.3522961,-58.7967762,17z/data=!3m1!4b1!4m6!3m5!1s0x95bb61b77bef62b9:0x346fd3d5c84c5ebb!8m2!3d-34.3522961!4d-58.7941959!16s%2Fg%2F11c74gtkx6?entry=ttu"

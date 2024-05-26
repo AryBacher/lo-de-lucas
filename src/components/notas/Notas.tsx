@@ -28,7 +28,7 @@ const Notas = () => {
     {
       title: "Un restaurante de Escobar ganó un premio al mejor bodegon",
       description:
-        "La tercera edición de las estatuillas más populares de la industria gastronómica argentina tuvo entre sus ganadores...",
+        "La tercera edición de las estatuillas más populares de la industria gastronómica argentina...",
       image: "/fotos/notas/LoDeLucas2.png",
       href: "https://infogei.com/nota/45334/un-restaurante-de-escobar-gano-un-premio-al-mejor-bodegon/",
     },
