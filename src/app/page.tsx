@@ -1,9 +1,9 @@
 import Footer from "@/components/footer/Footer";
-import Frase from "@/components/frase/Frase";
 import Intro from "@/components/introduccion/Intro";
 import Menu from "@/components/menu/Menu";
 import Notas from "@/components/notas/Notas";
 import Portada from "@/components/portada/Portada";
+import Testimonios from "@/components/testimonios/Testimonios";
 import Ubicacion from "@/components/ubicacion/Ubi";
 
 export default function Home() {
@@ -13,8 +13,8 @@ export default function Home() {
       <Intro />
       <Menu />
       <Notas />
-      <Frase />
       <Ubicacion />
+      <Testimonios />
       <Footer />
     </main>
   );
