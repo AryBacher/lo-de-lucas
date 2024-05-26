@@ -51,7 +51,7 @@ const Footer = () => {
 
   return (
     <footer className='w-full h-max bg-[#5B0D0F] flex justify-center items-center flex-col px-5 gap-8'>
-      <div className='w-[90%] sm:w-[50%] xl:w-full flex flex-col xl:flex-row justify-between items-start py-10 lg:py-20 gap-20'>
+      <div className='w-[90%] sm:w-[50%] xl:w-full flex flex-col xl:flex-row justify-between items-start py-10 lg:pt-10 lg:pb-5 gap-20'>
         <picture className='xl:w-[25%] w-full flex xl:justify-start justify-center items-center'>
           <Image src={'/fotos/logo.png'} alt='' width={250} height={250}></Image>
         </picture>

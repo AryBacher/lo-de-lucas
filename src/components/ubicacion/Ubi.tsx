@@ -56,7 +56,7 @@ const Ubi = () => {
             </Link >
           </ul>
         </div>
-        <div className='lg:w-[70%]  w-full lg:h-[300px] h-[200px] shadow-lg border-[1px] border-[#AD00FF] bg-gray-300 order-1 lg:order-2' style={{ backgroundImage: 'url("/fotos/ubicacion.png")' }}>
+        <div className='lg:w-[70%]  w-full lg:h-[300px] 2xl:h-[450px] h-[200px] shadow-lg border-[1px] border-[#AD00FF] bg-gray-300 order-1 lg:order-2' style={{ backgroundImage: 'url("/fotos/ubicacion.png")' }}>
 
           <picture>
             <Link

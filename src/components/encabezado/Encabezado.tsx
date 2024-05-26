@@ -4,6 +4,8 @@ import NavItems from './NavItems'
 import { cn } from '@/lib/utils'
 import BarsIcon from './BarsIcon'
 import { useParams } from 'next/navigation'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const Encabezado = () => {
   const arrItems = [
@@ -32,6 +34,8 @@ const Encabezado = () => {
   const params = useParams()
   const searchId = params.id
 
+  const isMainRoute = searchId
+
   const scrollHandler = () => {
     if (window.scrollY >= 80) {
       setHeader(false)
@@ -41,17 +45,26 @@ const Encabezado = () => {
   }
 
   useEffect(() => {
+
     window.addEventListener('scroll', scrollHandler)
     return () => {
       window.removeEventListener('scroll', scrollHandler)
     }
-  })
+  }
+  )
 
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <header className={header ? " w-full h-[70px] fixed z-30 flex justify-end items-center  top-0 lg:px-10 px-5 transition-all" : "bg-white w-full h-[70px] fixed z-30 flex justify-end items-center border-b-[1px] shadow-xl border-b-white/20 top-0 lg:px-10 px-4 transition-all"}
+    <header className={header ? " w-full h-[70px] fixed z-30 flex justify-start items-center  top-0 lg:px-10 px-5 transition-all border-b-[1px] border-white/0" : "bg-white w-full h-[70px] fixed z-30 flex justify-start items-center border-b-[1px] shadow-xl border-b-white/20 top-0 lg:px-10 px-4 transition-all "}
       id='inicio'>
-      <nav className='w-[65%] h-full flex justify-end items-center'>
+      <picture className='xl:w-[25%] w-[30%] h-full flex xl:justify-start justify-start items-center'>
+        <Link
+          href={'/#inicio'}
+        >
+          <Image src={'/fotos/logo.png'} alt='' width={110} height={110}></Image>
+        </Link>
+      </picture>
+      <nav className='w-[65%] h-full flex justify-end items-center xl:ml-28'>
         <ul className='xl:flex hidden w-[75%] justify-between items-center'>
           {arrItems.map((item, index) => (
             <NavItems key={index} title={item.title} href={item.href} className={header ? 'text-white' : ''} />

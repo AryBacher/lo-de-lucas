@@ -1,7 +1,6 @@
 "use client"
 import Comida from "@/components/helpers/Comida";
 import { useParams } from "next/navigation";
-import { title } from "process";
 
 
 export default function ComidaHome() {
