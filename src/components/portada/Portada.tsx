@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Portada = () => {
+
   return (
     <section id='inicio' className="w-full h-screen">
       <div className="relative w-full h-full bg-black">

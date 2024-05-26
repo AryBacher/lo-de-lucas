@@ -1,11 +1,10 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import NavItems from './NavItems'
 import { cn } from '@/lib/utils'
 import BarsIcon from './BarsIcon'
 
 const Encabezado = () => {
-  const [isOpen, setIsOpen] = useState(false)
   const arrItems = [
     {
       title: "Inicio",
@@ -28,8 +27,26 @@ const Encabezado = () => {
       href: "/#testimonios",
     }
   ]
+  const [header, setHeader] = useState(true)
+
+  const scrollHandler = () => {
+    if (window.scrollY >= 200) {
+      setHeader(false)
+    } else {
+      setHeader(true)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', scrollHandler)
+    return () => {
+      window.removeEventListener('scroll', scrollHandler)
+    }
+  })
+
+  const [isOpen, setIsOpen] = useState(false)
   return (
-    <header className="bg-white w-full h-[70px] fixed z-30 flex justify-end items-center border-b-[1px] shadow-xl border-b-white/20 top-0 lg:px-10 px-4"
+    <header className={header ? " w-full h-[70px] fixed z-30 flex justify-end items-center text-white top-0 lg:px-10 px-4 transition-all" : "bg-white w-full h-[70px] fixed z-30 flex justify-end items-center border-b-[1px] shadow-xl border-b-white/20 top-0 lg:px-10 px-4 transition-all"}
       id='inicio'>
       <nav className='w-[65%] h-full flex justify-end items-center'>
         <ul className='lg:flex hidden w-[75%] justify-between items-center'>
@@ -38,12 +55,18 @@ const Encabezado = () => {
           ))}
         </ul>
       </nav>
-      <div className="relative lg:hidden block z-50">
-        <BarsIcon isOpen={isOpen} setIsOpen={setIsOpen} />
+      <div className="relative lg:hidden block z-50 rounded-xl">
+        {
+          header ? <svg onClick={() => setIsOpen(!isOpen)} width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.3335 35.9792V33.8958H41.6668V35.9792H8.3335ZM8.3335 26.0417V23.9583H41.6668V26.0417H8.3335ZM8.3335 16.1042V14.0208H41.6668V16.1042H8.3335Z" fill="white" />
+          </svg> :
+
+            <BarsIcon isOpen={isOpen} setIsOpen={setIsOpen} />
+        }
       </div>
       <aside
         className={cn(
-          "fixed top-0 left-0 w-[80%] h-screen bg-white lg:hidden flex -translate-x-full transition-all duration-500 justify-between items-center",
+          "fixed top-0 left-0 w-[75%] h-screen bg-white lg:hidden flex -translate-x-full transition-all duration-500 justify-between items-center",
           {
             "translate-x-0 transition-all duration-500": isOpen,
           }

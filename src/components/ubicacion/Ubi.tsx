@@ -28,10 +28,10 @@ const Ubi = () => {
   ]
 
   return (
-    <section className='w-[90%] flex justify-center items-center flex-col gap-5 py-10'
+    <section className='w-[90%] md:w-[50%] xl:w-[90%] flex justify-center items-center flex-col gap-5 py-10'
       id='ubicacion'>
       <div className='w-full h-1/6 flex justify-center items-center flex-col gap-2'>
-        <h1 className='text-[#AD00FF] w-full xl:h-auto text-3xl font-semibold  text-center'>ENCONTRAMOS</h1>
+        <h1 className='text-[#AD00FF] w-full xl:h-auto text-3xl font-semibold  text-center'>ENCONTRANOS</h1>
         <p className={`${poppins.className} w-[85%] lg:w-[50%] text-container text-[#7C7C7C] text-sm text-center hidden md:block`}>Visita nuestro Bodegón para vivir la experiencia de comer en Lo de Lucas en carne propia.</p>
       </div>
       <div className='w-full h-4/6 flex justify-center items-center flex-col lg:flex-row gap-5'>
