@@ -1,4 +1,3 @@
-import Footer from "@/components/footer/Footer";
 import Intro from "@/components/introduccion/Intro";
 import Menu from "@/components/menu/Menu";
 import Notas from "@/components/notas/Notas";
@@ -15,7 +14,6 @@ export default function Home() {
       <Notas />
       <Ubicacion />
       <Testimonios />
-      <Footer />
     </main>
   );
 }

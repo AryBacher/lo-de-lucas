@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Oswald, Poppins } from "next/font/google";
 import "./globals.css";
 import Encabezado from "@/components/encabezado/Encabezado";
+import Footer from "@/components/footer/Footer";
 
 const oswald = Oswald({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={`${oswald.className}`}>
         <Encabezado />
         {children}
+        <Footer />
       </body>
     </html>
   );

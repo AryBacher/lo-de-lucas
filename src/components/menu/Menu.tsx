@@ -30,7 +30,7 @@ const Menu = () => {
     {
       title: "Entradas",
       description: "Abundantes milanesas de todos los gustos existentes.",
-      image: "/fotos/entradas/Entradas.png",
+      image: "/fotos/entradas/Papas.png",
       href: "/entradas",
     }
   ]
