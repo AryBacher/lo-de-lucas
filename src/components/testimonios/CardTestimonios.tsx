@@ -17,7 +17,7 @@ const CardTestimonios = ({ name, testimonio }: CardProps) => {
     <CarouselItem className='md:basis-1/2 w-full flex justify-center items-center'>
       <div className='w-[400px] h-[270px] md:h-[250px] border-[1px] border-[#710996] px-4 flex justify-center items-center flex-col' >
         <div className='w-full h-1/3 flex justify-center items-center flex-col gap-1'>
-          <h2 className={`${poppins.className}`}>{name}</h2>
+          <h2 className={`${poppins.className} pt-6 md:pt-0`}>{name}</h2>
           <svg width="120" height="20" viewBox="0 0 120 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10 0L12.2451 6.90983H19.5106L13.6327 11.1803L15.8779 18.0902L10 13.8197L4.12215 18.0902L6.36729 11.1803L0.489435 6.90983H7.75486L10 0Z" fill="#710996" />
             <path d="M35 0L37.2451 6.90983H44.5106L38.6327 11.1803L40.8779 18.0902L35 13.8197L29.1221 18.0902L31.3673 11.1803L25.4894 6.90983H32.7549L35 0Z" fill="#710996" />
