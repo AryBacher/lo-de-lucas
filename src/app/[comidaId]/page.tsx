@@ -125,39 +125,45 @@ export default function ComidaHome() {
     {
       id: 1,
       title: 'Bastones de muzzarella',
-      image: "/fotos/entradas/Muzza.webp"
+      image: "/fotos/entradas/Muzza.png"
     },
     {
       id: 2,
       title: 'Papas con cheddar y panceta',
-      image: "/fotos/entradas/PapasCheddar.webp"
+      image: "/fotos/entradas/Papas.png"
     },
     {
       id: 3,
       title: 'Rabas',
-      image: "/fotos/entradas/Rabas.webp"
+      image: "/fotos/entradas/Rabas.png"
     },
     {
       id: 4,
       title: 'tortilla de papas',
-      image: "/fotos/entradas/Tortilla.webp"
+      image: "/fotos/entradas/Tortilla.png"
     },
     {
       id: 5,
       title: 'Omelette',
-      image: "/fotos/entradas/Omelette.webp"
+      image: "/fotos/entradas/Omelette.png"
     },
     {
       id: 6,
       title: 'Buñuelos de espinaca',
-      image: "/fotos/entradas/Bunuelos.webp"
+      image: "/fotos/entradas/Bunuelos.png"
     },
     {
       id: 7,
       title: 'Revuelto de gramajo',
-      image: "/fotos/entradas/Revuelto.webp"
+      image: "/fotos/entradas/Revuelto.png"
     },
   ]
+
+  const Entradas = EntradasArr.map((item) => {
+    return (
+      <Comida key={item.id} title={item.title} image={item.image} />
+    )
+  })
 
   return (
     <main className="w-full min-h-screen my-32 flex justify-start items-start">
@@ -183,7 +189,16 @@ export default function ComidaHome() {
               {Postres}
             </div>
           </section>
-        ) : 'No hay comida'
+        ) : params.comidaId === 'entradas' ? (
+          <section className="w-full h-full flex flex-col justify-center items-center gap-5">
+            <h1 className="text-3xl title font-bold">Entradas</h1>
+            <div className="w-full h-full flex flex-wrap justify-center items-center gap-5">
+              {Entradas}
+            </div>
+          </section>
+        ) : (
+          <h1 className="text-3xl title font-bold">No se encontró la comida</h1>
+        )
       }
     </main>
   )

@@ -30,7 +30,7 @@ const Encabezado = () => {
   const [header, setHeader] = useState(true)
 
   const scrollHandler = () => {
-    if (window.scrollY >= 200) {
+    if (window.scrollY >= 80) {
       setHeader(false)
     } else {
       setHeader(true)
