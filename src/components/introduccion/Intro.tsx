@@ -13,7 +13,7 @@ const Intro = () => {
         className="w-[95%] h-max flex justify-center items-center flex-col p-4 gap-2"
       >
         <div className="w-full h-1/3 flex justify-center items-center flex-col lg:flex-row gap-2.5">
-          <h1 className="text-3xl text-[#D26500] font-semibold">LO DE LUCAS ES FAMILIA</h1>
+          <h1 className="text-3xl text-[#D26500] font-semibold text-center">LO DE LUCAS ES FAMILIA</h1>
         </div>
         <div className={`${poppins.className} w-full h-2/3 flex justify-center items-center font-sans`}>
           <p className="text-center text-[#0E0E0E] ">
