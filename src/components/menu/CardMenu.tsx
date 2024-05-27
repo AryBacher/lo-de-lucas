@@ -34,7 +34,7 @@ const CardMenu = ({ href, title, image, description }: Props) => {
         className="w-full h-[30%] flex justify-center items-center flex-col p-2 gap-2 border-t-[1px] border-[#00084D]"
       >
         <div className="w-full h-1/3 flex justify-start items-center">
-          <h2 className="text-start text-2xl font-bold">{title}</h2>
+          <h2 className={`${poppins.className} text-start text-2xl font-bold`}>{title}</h2>
         </div>
         <div className="w-full h-2/3 flex justify-between items-start flex-row">
           <p className={`${poppins.className} w-[75%] text-start text-container text-[#7C7C7C]`}>
