@@ -56,7 +56,7 @@ const Ubi = () => {
             </Link >
           </ul>
         </div>
-        <div className='lg:w-[70%]  w-full lg:h-[300px] 2xl:h-[450px] h-[200px] shadow-lg border-[1px] border-[#AD00FF] bg-gray-300 order-1 lg:order-2' style={{ backgroundImage: 'url("/fotos/ubicacion.png")' }}>
+        <div className='lg:w-[50%] 2xl:w-[70%] w-full lg:h-[300px] 2xl:h-[450px] h-[200px] shadow-lg border-[1px] border-[#AD00FF] bg-gray-300 order-1 lg:order-2' style={{ backgroundImage: 'url("/fotos/ubicacion.png")' }}>
           <picture>
             <Link
               href="https://www.google.com.ar/maps/place/Lo+De+Lucas+Bodegón/@-34.3522961,-58.7967762,17z/data=!3m1!4b1!4m6!3m5!1s0x95bb61b77bef62b9:0x346fd3d5c84c5ebb!8m2!3d-34.3522961!4d-58.7941959!16s%2Fg%2F11c74gtkx6?entry=ttu"
