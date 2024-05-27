@@ -15,7 +15,7 @@ type CardProps = {
 const CardTestimonios = ({ name, testimonio }: CardProps) => {
   return (
     <CarouselItem className='lg:basis-1/2 2xl:basis-1/3  w-full flex justify-center items-center px-4'>
-      <div className='w-[400px] h-[270px] md:h-[250px] border-[1px] border-[#710996] px-4 flex justify-center items-center flex-col' >
+      <div className='w-[400px] h-[270px] md:h-[250px] border-[2px] border-[#710996] px-4 flex justify-center items-center flex-col' >
         <div className='w-full h-1/3 flex justify-center items-center flex-col gap-1 pb-5 md:pb-0'>
           <h2 className={`${poppins.className} pt-6 md:pt-0`}>{name}</h2>
           <svg width="120" height="20" viewBox="0 0 120 20" fill="none" xmlns="http://www.w3.org/2000/svg">
