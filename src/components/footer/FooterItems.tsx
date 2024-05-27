@@ -40,7 +40,7 @@ const FooterItems = () => {
           <div className='w-[10%]'>
             {item.icon}
           </div>
-          <p className={`${poppins.className} w-[90%] text-white text-xs sm:text-sm`}>{item.title}</p>
+          <p className={`${poppins.className} w-[90%] text-white text-sm`}>{item.title}</p>
         </li>
       ))}
     </ul>
