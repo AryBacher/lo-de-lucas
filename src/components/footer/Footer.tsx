@@ -58,7 +58,7 @@ const Footer = () => {
           </picture>
           <FooterItems />
           <ul className='xl:w-[15%] w-[35%] flex flex-col justify-center items-start gap-3'>
-            <label className={`${poppins.className} text-white font-semibold`}>Seguinos</label>
+            <label className={`${poppins.className} text-white font-medium`}>Seguinos</label>
             <div className='w-full flex justify-between items-center'>
               {redesItems.map((item, index) => (
                 <li key={index}>
@@ -70,14 +70,14 @@ const Footer = () => {
             </div>
           </ul>
           <ul className='xl:w-[25%] w-full h-full flex justify-center items-start flex-col gap-2'>
-            <label className={`${poppins.className} text-white font-semibold`}>Páginas</label>
+            <label className={`${poppins.className} text-white font-medium`}>Páginas</label>
             {arrNavItems.map((item, index) => (
               <NavItems key={index} title={item.title} href={item.href} className='text-white font-normal' />
             ))}
           </ul >
         </div>
         <div className="w-full h-max flex items-center justify-center border-t-[1px] border-white/20 flex-col pb-4">
-          <small className={`${poppins.className} text-center text-white text-sm font-bold mt-2 `}>
+          <small className={`${poppins.className} text-center text-white text-sm font-medium mt-2 `}>
             © 2024 Lo De Lucas. Todos los derechos reservados.
           </small>
           <small className={`${poppins.className} text-center text-white/60 text-sm font-normal `}>

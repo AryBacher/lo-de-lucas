@@ -41,7 +41,7 @@ const Notas = () => {
     },
     {
       title: "El bodegón donde todo es...",
-      description: "Queda en Escobar pero gracias al boca en boca tienen comensales de todos lados...",
+      description: "Queda en Escobar pero gracias al boca en boca tienen comensales de todos lados. Sus porciones son tan...",
       image: "/fotos/notas/LoDeLucas3.png",
       href: "https://www.lanacion.com.ar/lifestyle/el-bodegon-donde-todo-es-gigante-una-milanesa-para-10-personas-y-tortas-de-10-kilos-nid24032021/",
     }
