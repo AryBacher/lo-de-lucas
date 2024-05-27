@@ -50,7 +50,7 @@ const Notas = () => {
 
   return (
     <section id='notas' className="w-full h-max flex justify-center items-center pt-10">
-      <main className="w-[85%] flex justify-center items-center flex-col gap-6">
+      <main className="w-[80%] flex justify-center items-center flex-col gap-6">
 
         <div className='w-full flex flex-col justify-center items-center gap-2'>
           <h1
