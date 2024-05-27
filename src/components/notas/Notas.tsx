@@ -38,6 +38,12 @@ const Notas = () => {
         'Brindan a su público la más amplia variedad de servicios gastronómicos estilo comida casera. ',
       image: "/fotos/notas/Salon.png",
       href: "https://noticias.perfil.com/noticias/espacio-no-editorial/lo-de-lucas-bodegon.phtml",
+    },
+    {
+      title: "El bodegón donde todo es...",
+      description: "Queda en Escobar pero gracias al boca en boca tienen comensales de todos lados...",
+      image: "/fotos/notas/LoDeLucas3.png",
+      href: "https://www.lanacion.com.ar/lifestyle/el-bodegon-donde-todo-es-gigante-una-milanesa-para-10-personas-y-tortas-de-10-kilos-nid24032021/",
     }
 
   ]

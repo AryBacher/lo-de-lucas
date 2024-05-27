@@ -169,28 +169,28 @@ export default function ComidaHome() {
       {
         params.comidaId === 'milanesas' ? (
           <section className="w-full h-full flex flex-col justify-center items-center gap-5">
-            <h1 className="text-3xl title font-bold not-italic">Milanesas</h1>
+            <h1 className="text-3xl font-bold">Milanesas</h1>
             <div className="w-full h-full flex flex-wrap justify-center lg:items-start items-center gap-5">
               {Milanesas}
             </div>
           </section>
         ) : params.comidaId === 'pastas' ? (
           <section className="w-full h-full flex flex-col justify-center items-center gap-5">
-            <h1 className="text-3xl title font-bold">Pastas</h1>
+            <h1 className="text-3xl font-bold">Pastas</h1>
             <div className="w-full h-full flex flex-wrap justify-center items-center gap-5">
               {Pastas}
             </div>
           </section>
         ) : params.comidaId === 'postres' ? (
           <section className="w-full h-full flex flex-col justify-center items-center gap-5">
-            <h1 className="text-3xl title font-bold">Postres</h1>
+            <h1 className="text-3xl font-bold">Postres</h1>
             <div className="w-full h-full flex flex-wrap justify-center items-center gap-5">
               {Postres}
             </div>
           </section>
         ) : params.comidaId === 'entradas' ? (
           <section className="w-full h-full flex flex-col justify-center items-center gap-5">
-            <h1 className="text-3xl title font-bold">Entradas</h1>
+            <h1 className="text-3xl font-bold">Entradas</h1>
             <div className="w-full h-full flex flex-wrap justify-center items-center gap-5">
               {Entradas}
             </div>
