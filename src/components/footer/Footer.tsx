@@ -50,39 +50,40 @@ const Footer = () => {
   ]
 
   return (
-    <footer className='w-full h-max bg-[#5B0D0F] flex justify-center items-center flex-col px-5 gap-8'>
-      <div className='w-[90%] sm:w-[50%] xl:w-full flex flex-col xl:flex-row justify-between items-start py-5 lg:pt-10 lg:pb-5 gap-10 md:gap-20'>
-        <picture className='xl:w-[25%] w-full flex xl:justify-start justify-center items-center'>
-          <Image src={'/fotos/logo.png'} alt='' width={250} height={250} quality={75} loading="lazy"></Image>
-        </picture>
-        <FooterItems />
-        <ul className='xl:w-[15%] w-[35%] flex flex-col justify-center items-start gap-3'>
-          <label className={`${poppins.className} text-white font-bold`}>Seguinos</label>
-          <div className='w-full flex justify-between items-center'>
-            {redesItems.map((item, index) => (
-              <li key={index}>
-                <Link href={item.link} target='_blank'>
-                  <Image height={30} width={30} src={item.icon} alt='icon' />
-                </Link>
-              </li>
+    <footer className='w-full h-max bg-[#5B0D0F] flex justify-center items-center flex-col gap-8'>
+      <div className='w-full h-full flex justify-center items-center flex-col'>
+        <div className='w-[90%] sm:w-[50%] xl:w-full flex flex-col xl:flex-row justify-between items-start px-5 py-20 gap-10 md:gap-20'>
+          <picture className='xl:w-[25%] w-full flex xl:justify-start justify-center items-center'>
+            <Image src={'/fotos/logo.png'} alt='' width={250} height={250} quality={75} loading="lazy"></Image>
+          </picture>
+          <FooterItems />
+          <ul className='xl:w-[15%] w-[35%] flex flex-col justify-center items-start gap-3'>
+            <label className={`${poppins.className} text-white font-semibold`}>Seguinos</label>
+            <div className='w-full flex justify-between items-center'>
+              {redesItems.map((item, index) => (
+                <li key={index}>
+                  <Link href={item.link} target='_blank'>
+                    <Image height={30} width={30} src={item.icon} alt='icon' />
+                  </Link>
+                </li>
+              ))}
+            </div>
+          </ul>
+          <ul className='xl:w-[25%] w-full h-full flex justify-center items-start flex-col gap-2'>
+            <label className={`${poppins.className} text-white font-semibold`}>Páginas</label>
+            {arrNavItems.map((item, index) => (
+              <NavItems key={index} title={item.title} href={item.href} className='text-white font-normal' />
             ))}
-          </div>
-        </ul>
-        <ul className='xl:w-[25%] w-full h-full flex justify-center items-start flex-col gap-4'>
-          <label className={`${poppins.className} text-white font-bold`}>Páginas</label>
-          {arrNavItems.map((item, index) => (
-            <NavItems key={index} title={item.title} href={item.href} className='text-white' />
-          ))}
-        </ul >
-      </div>
-      <label className={`${poppins.className} text-white font-semibold mt-5 text-center`}>Pedí al 0348 443-0751 y vení a retirar al local</label>
-      <div className="w-[85%] md:w-[47%] h-max flex items-center justify-center border-t-[1px] border-white/20 flex-col pb-4">
-        <small className={`${poppins.className} text-center text-white text-sm font-bold mt-2 `}>
-          © 2024 Lo De Lucas. Todos los derechos reservados.
-        </small>
-        <small className={`${poppins.className} text-center text-white/60 text-sm font-normal `}>
-          Diseñado y desarrollado por <Link href="https://synera.com.ar" target='_blank' className='underline text-[#84E9FF]'>Synera</Link>
-        </small>
+          </ul >
+        </div>
+        <div className="w-full h-max flex items-center justify-center border-t-[1px] border-white/20 flex-col pb-4">
+          <small className={`${poppins.className} text-center text-white text-sm font-bold mt-2 `}>
+            © 2024 Lo De Lucas. Todos los derechos reservados.
+          </small>
+          <small className={`${poppins.className} text-center text-white/60 text-sm font-normal `}>
+            Diseñado y desarrollado por <Link href="https://synera.com.ar" target='_blank' className='underline text-[#84E9FF]'>Synera</Link>
+          </small>
+        </div>
       </div>
     </footer>
   )
