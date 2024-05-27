@@ -20,7 +20,7 @@ const CardNotas = ({ href, title, image, description }: Props) => {
   return (
     <div className="w-full md:w-[50%] lg:w-[30%] 2xl:w-[25%] h-max flex justify-center items-center flex-col gap-3 rounded-lg">
       <picture className="w-full ">
-        <Image width={400} height={400} src={image} alt='Bodeón Lo De Lucas' className="rounded-2xl w-full h-full" />
+        <Image width={400} height={400} src={image} alt='Bodeón Lo De Lucas' quality={75} loading='lazy' className="rounded-2xl w-full h-full" />
       </picture>
       <div className="w-full h-[45%] flex justify-start items-center flex-col gap-2 ">
         <div className="w-full h-1/4 flex justify-start items-center">

@@ -18,9 +18,18 @@ interface Props {
 const CardMenu = ({ href, title, image, description }: Props) => {
   return (
     <div className="lg:w-[22%] w-full h-max border-[1px] border-[#00084D] rounded-lg">
-      <picture className="w-full h-[70%] rounded-t-md">
-        <Image width={400} height={400} src={image} alt={title} className="w-full h-auto  rounded-t-md" />
-      </picture>
+      <div className="w-full h-[70%] rounded-t-md overflow-hidden">
+        <Image
+          src={image}
+          alt={title}
+          layout="responsive"
+          width={400}
+          height={400}
+          className="rounded-t-md"
+          quality={75}
+          loading="lazy"
+        />
+      </div>
       <div
         className="w-full h-[30%] flex justify-center items-center flex-col p-4 gap-2 border-t-[1px] border-[#00084D]"
       >
@@ -32,15 +41,16 @@ const CardMenu = ({ href, title, image, description }: Props) => {
             {description}
           </p>
           <Link href={href} className="w-12 h-12 bg-[#00084D] rounded-lg">
-            <picture className="w-full h-full flex justify-center items-center">
+            <div className="w-full h-full flex justify-center items-center">
               <Image
                 width={24}
                 height={24}
                 src="/icons/arrow.svg"
                 alt="arrow-right"
-                className="w-6 h-6"
+                quality={75}
+                loading="lazy"
               />
-            </picture>
+            </div>
           </Link>
         </div>
       </div>

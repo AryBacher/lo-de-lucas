@@ -14,7 +14,7 @@ const Comida = ({ title, image }: ComidaProps) => {
     <div className="lg:w-[350px] w-[375px] h-[300px] pt-5 px-10 lg:pt-0 lg:px-0 flex justify-center items-center flex-col">
       <div className='w-full h-full flex justify-center items-start flex-col gap-4'>
         <picture className='w-full h-[80%]'>
-          <Image width={300} height={250} src={image} alt={title} className="w-full h-full" />
+          <Image width={300} height={250} src={image} alt={title} className="w-full h-full" quality={75} loading="lazy" />
         </picture>
         <div
           className="w-full h-[20%] flex justify-start items-center flex-col"
