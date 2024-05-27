@@ -24,7 +24,7 @@ const CardNotas = ({ href, title, image, description }: Props) => {
       </picture>
       <div className="w-full h-[45%] flex justify-start items-center flex-col gap-2 ">
         <div className="w-full h-1/4 flex justify-start items-center">
-          <h2 className="w-full text-start text-xl font-bold ">{title}</h2>
+          <h2 className={`${poppins.className} w-full text-start text-xl font-bold `}>{title}</h2>
         </div>
         <div className="w-full h-3/4 flex justify-center items-start flex-col gap-4">
           <p className={`${poppins.className} w-full text-container text-[#7C7C7C] text-base text-start font-oswald`}>

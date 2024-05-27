@@ -68,7 +68,7 @@ const Ubi = () => {
                 width={1100}
                 height={1100}
                 className='w-full h-full'
-                quality={75}
+                quality={100}
                 loading="lazy"
               ></Image>
             </Link>
