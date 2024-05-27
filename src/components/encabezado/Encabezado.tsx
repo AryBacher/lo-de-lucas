@@ -51,18 +51,15 @@ const Encabezado = () => {
     }
   }
   )
-
-  header ? " w-full h-[70px] fixed z-30 flex justify-start items-center  top-0 lg:px-10 px-5 transition-all border-b-[1px] border-white/0" : "bg-white w-full h-[70px] fixed z-30 flex justify-start items-center border-b-[1px] shadow-xl border-b-white/20 top-0 lg:px-10 px-4 transition-all "
-
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <header className={cn(header ? "w-full h-[70px] fixed z-30 flex justify-start items-center  top-0 lg:px-10 px-5 transition-all border-b-[1px] border-white/0" : "  bg-white w-full h-[70px] fixed z-30 flex justify-start items-center border-b-[1px] shadow-xl border-b-white/20 top-0 lg:px-10 px-4 transition-all",
+    <header className={cn(header ? "w-full h-[70px] fixed z-30 flex justify-start items-center  top-0 lg:px-10 px-4 transition-all border-b-[1px] border-white/0" : "  bg-white w-full h-[70px] fixed z-30 flex justify-start items-center border-b-[1px] shadow-xl border-b-white/20 top-0 lg:px-10 px-4 transition-all",
       {
-        " w-full h-[70px] fixed z-30 flex justify-start items-center  top-0 lg:px-10 px-5 transition-all border-b-[1px] border-white/0": header === true && params !== '/milanesas' && params !== '/pastas' && params !== '/postres' && params !== '/entradas',
+        " w-full h-[70px] fixed z-30 flex justify-start items-center  top-0 lg:px-10 px-4 transition-all border-b-[1px] border-white/0": header === true && params !== '/milanesas' && params !== '/pastas' && params !== '/postres' && params !== '/entradas',
 
       })}
       id='inicio'>
-      <picture className='xl:w-[25%] w-[30%] h-full flex xl:justify-start justify-start items-center z-10'>
+      <picture className='xl:w-[25%] h-full w-[50%] flex justify-start items-center z-10'>
         <Link
           href={'/#inicio'}
         >
