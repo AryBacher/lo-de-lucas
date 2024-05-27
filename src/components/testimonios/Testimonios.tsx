@@ -58,9 +58,9 @@ const Testimonios = () => {
             delay: 3000,
           }),
         ]}
-        className='w-[90%] h-full flex justify-center items-center overflow-hidden'
+        className='w-full h-full flex justify-center items-center overflow-hidden ml-4'
       >
-        <CarouselContent className="flex flex-row ">
+        <CarouselContent className="flex flex-row">
           {aboutArr.map((item, index) => (
             <CardTestimonios
               key={index}
@@ -69,8 +69,6 @@ const Testimonios = () => {
             />
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
       </Carousel>
     </main>
   )
