@@ -17,7 +17,7 @@ interface Props {
 
 const CardMenu = ({ href, title, image, description }: Props) => {
   return (
-    <div className="lg:w-[25%] 2xl:w-[22%] w-full h-max border-[1px] border-[#00084D] rounded-lg">
+    <div className="lg:w-[35%] 2xl:w-[22%] w-full h-max border-[1px] border-[#00084D] rounded-lg">
       <div className="w-full h-[70%] rounded-t-md overflow-hidden">
         <Image
           src={image}

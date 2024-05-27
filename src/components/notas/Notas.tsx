@@ -28,7 +28,7 @@ const Notas = () => {
     {
       title: "Un restaurante de Escobar ganó un premio al mejor bodegon",
       description:
-        "La tercera edición de las estatuillas más populares de la industria gastronómica argentina...",
+        "La tercera edición de las estatuillas más populares de la industria gastronómica...",
       image: "/fotos/notas/LoDeLucas2.png",
       href: "https://infogei.com/nota/45334/un-restaurante-de-escobar-gano-un-premio-al-mejor-bodegon/",
     },
@@ -43,9 +43,8 @@ const Notas = () => {
       title: "El bodegón donde todo es...",
       description: "Queda en Escobar pero gracias al boca en boca tienen comensales de todos lados. Sus porciones son tan...",
       image: "/fotos/notas/LoDeLucas3.png",
-      href: "https://www.lanacion.com.ar/lifestyle/el-bodegon-donde-todo-es-gigante-una-milanesa-para-10-personas-y-tortas-de-10-kilos-nid24032021/",
+      href: "https://www.clarin.com/gourmet/bodegon-gigante-sirven-milanesa-compartir-10-tortas-12-kilos_0_jUzIw7cDHQ.html",
     }
-
   ]
 
   return (
@@ -62,7 +61,6 @@ const Notas = () => {
         </div>
         <div className="w-full h-max flex justify-center items-center flex-col flex-wrap lg:flex-row gap-10">
           {CardInfo.map((card, index) => {
-
             return (
               <CardNotas
                 key={index}
@@ -71,7 +69,6 @@ const Notas = () => {
                 image={card.image}
                 href={card.href}
               />
-
             )
           })}
         </div>
