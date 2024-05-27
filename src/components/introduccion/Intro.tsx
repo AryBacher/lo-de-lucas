@@ -8,7 +8,7 @@ const poppins = Poppins({
 
 const Intro = () => {
   return (
-    <section className="w-full sm:w-[45%] h-[300px] flex justify-center items-center">
+    <section className="w-full sm:w-[45%] lg:h-[200px] h-[300px] flex justify-center items-center">
       <div
         className="w-[95%] h-max flex justify-center items-center flex-col p-4 gap-2"
       >
