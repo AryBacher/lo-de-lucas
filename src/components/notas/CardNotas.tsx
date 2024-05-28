@@ -32,7 +32,7 @@ const CardNotas = ({ href, title, image, description }: Props) => {
           </p>
           <Link
             href={href}
-            className={`${poppins.className} w-full h-10 bg-[#E1AF00] text-base rounded-xl flex justify-center items-center font-semibold p-2`}
+            className={`${poppins.className} w-full h-10 bg-[#E1AF00] text-base rounded-xl flex justify-center items-center font-medium p-2`}
           >Leer más </Link>
         </div>
       </div>

@@ -52,12 +52,12 @@ const Footer = () => {
   return (
     <footer className='w-full h-max bg-[#5B0D0F] flex justify-center items-center flex-col gap-8'>
       <div className='w-full h-full flex justify-center items-center flex-col'>
-        <div className='w-[90%] sm:w-[50%] xl:w-full flex flex-col xl:flex-row justify-between items-start px-5 py-20 gap-10 md:gap-20'>
-          <picture className='xl:w-[25%] w-full flex xl:justify-start justify-center items-center'>
+        <div className='sm:w-[90%] :w-[50%] xl:w-full flex flex-col lg:flex-row justify-between lg:items-start items-center px-5 py-20 gap-10 md:gap-20'>
+          <picture className='lg:w-[25%] w-full flex lg:justify-start justify-center items-center'>
             <Image src={'/fotos/logo.png'} alt='' width={250} height={250} quality={75} loading="lazy"></Image>
           </picture>
           <FooterItems />
-          <ul className='xl:w-[15%] w-[35%] flex flex-col justify-center items-start gap-3'>
+          <ul className='lg:w-[15%] w-[35%] flex flex-col justify-center lg:items-start items-center gap-3'>
             <label className={`${poppins.className} text-white font-medium`}>Seguinos</label>
             <div className='w-full flex justify-between items-center'>
               {redesItems.map((item, index) => (
@@ -69,7 +69,7 @@ const Footer = () => {
               ))}
             </div>
           </ul>
-          <ul className='xl:w-[25%] w-full h-full flex justify-center items-start flex-col gap-2'>
+          <ul className='lg:w-[25%] w-full h-full flex justify-center items-start flex-col gap-2'>
             <label className={`${poppins.className} text-white font-medium`}>Páginas</label>
             {arrNavItems.map((item, index) => (
               <NavItems key={index} title={item.title} href={item.href} className='text-white font-normal' />

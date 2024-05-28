@@ -43,7 +43,7 @@ const Testimonios = () => {
 
   return (
 
-    <main id='testimonios' className='w-[90%] h-max flex flex-col justify-center items-center gap-5 pb-20'>
+    <main id='testimonios' className='w-full h-max flex flex-col justify-center items-center gap-5 pb-20'>
       <div className='flex justify-center items-center flex-col gap-2'>
         <h1 className='text-[#710996] w-full xl:h-auto text-3xl font-semibold text-center'>TESTIMONIOS DE NUESTROS CLIENTES</h1>
         <p className={`${poppins.className} w-[80%] text-sm text-[#7C7C7C] hidden md:block text-center`}>Escuche a nuestros clientes satisfechos acerca de su experiencia con nuestro restaurante.</p>
@@ -58,9 +58,9 @@ const Testimonios = () => {
             delay: 3000,
           }),
         ]}
-        className='w-full h-full flex justify-center items-center overflow-hidden ml-4'
+        className='w-full h-full flex justify-center items-center overflow-hidden'
       >
-        <CarouselContent className="flex flex-row">
+        <CarouselContent className="flex flex-row m-0">
           {aboutArr.map((item, index) => (
             <CardTestimonios
               key={index}

@@ -37,14 +37,14 @@ const Menu = () => {
   ]
   return (
     <section
-      className="w-[80%] h-max flex justify-center items-center flex-col gap-6"
+      className="w-full h-max flex justify-center items-center flex-col gap-6"
       id='menu'
     >
       <div className='w-full h-1/6 flex justify-center items-center flex-col gap-2'>
         <h1 className='text-[#00084D] w-full xl:h-auto text-3xl font-semibold  text-center'>LOS PLATOS FAVORITOS</h1>
         <p className={`${poppins.className} w-[85%] lg:w-[50%] text-container text-[#7C7C7C] text-sm text-center`}>Visita nuestro Bodegón para vivir la experiencia de comer en Lo de Lucas en carne propia.</p>
       </div>
-      <div className="w-full h-max flex items-center justify-center flex-wrap sm:gap-10 gap-5">
+      <div className="w-full h-max flex items-center justify-around flex-wrap ">
         {CardInfo.map((card, index) => {
           return (
             <CardMenu
@@ -62,7 +62,7 @@ const Menu = () => {
         <Link
           href="https://drive.google.com/file/d/1HlmRJ94kEqYx7wlLr5FsdBE0u1dRD-Lj/view"
           target='_blank'
-          className="w-full lg:w-full h-[50px] bg-[#00084D] flex flex-row justify-center items-center gap-4 rounded-xl"
+          className="w-full lg:w-full h-[40px] bg-[#00084D] flex flex-row justify-center items-center gap-4 rounded-xl"
         >
           <h3 className={`${poppins.className} text-white text-base font-medium`}>
             Ver Menú

@@ -26,9 +26,9 @@ const Notas = () => {
       href: "https://thewinetime.com.ar/como-es-lo-de-lucas-el-bodegon-que-hace-milanesas-para-10-personas-y-tortas-de-10-kilos/",
     },
     {
-      title: "Un restaurante de Escobar ganó un premio al mejor...",
+      title: "Un restaurante de Escobar ganó un premio al mejor bodegón",
       description:
-        "La tercera edición de las estatuillas más populares de la industria gastronómica...",
+        "La tercera edición de las estatuillas más populares de la industria gastronómica argentina...  ",
       image: "/fotos/notas/LoDeLucas2.png",
       href: "https://infogei.com/nota/45334/un-restaurante-de-escobar-gano-un-premio-al-mejor-bodegon/",
     },
