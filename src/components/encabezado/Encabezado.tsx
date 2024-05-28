@@ -66,14 +66,14 @@ const Encabezado = () => {
           <Image src={'/fotos/logo.png'} alt='Logo Lo de Lucas' width={110} height={110} quality={75} loading="lazy"></Image>
         </Link>
       </picture>
-      <nav className='w-[65%] h-full flex justify-end items-center xl:ml-28'>
-        <ul className='xl:flex hidden w-[75%] justify-between items-center'>
+      <nav className='w-[65%] lg:w-full xl:w-[75%] h-full flex justify-end items-center xl:ml-28'>
+        <ul className='lg:flex hidden w-[75%] lg:w-full xl:w-[75%] justify-between items-center'>
           {arrItems.map((item, index) => (
             <NavItems key={index} title={item.title} href={item.href} className={cn(header ? "text-white" : "text-black")} />
           ))}
         </ul>
       </nav>
-      <div className="relative xl:hidden block z-50 rounded-xl">
+      <div className="relative lg:hidden block z-50 rounded-xl">
         {
           header ? <svg onClick={() => setIsOpen(!isOpen)} width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
             <path d="M8.3335 35.9792V33.8958H41.6668V35.9792H8.3335ZM8.3335 26.0417V23.9583H41.6668V26.0417H8.3335ZM8.3335 16.1042V14.0208H41.6668V16.1042H8.3335Z" fill="white" />
@@ -84,7 +84,7 @@ const Encabezado = () => {
       </div>
       <aside
         className={cn(
-          "fixed top-0 left-0 w-[75%] h-screen bg-white xl:hidden flex -translate-x-full transition-all duration-500 justify-between items-center",
+          "fixed top-0 left-0 w-[75%] h-screen bg-white lg:hidden flex -translate-x-full transition-all duration-500 justify-between items-center",
           {
             "translate-x-0 transition-all duration-500": isOpen,
           }
