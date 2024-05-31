@@ -57,9 +57,9 @@ const Footer = () => {
             <Image src={'/fotos/logo.png'} alt='' width={250} height={250} quality={75} loading="lazy"></Image>
           </picture>
           <FooterItems />
-          <ul className='w-full flex flex-col justify-center items-start gap-3'>
+          <ul className='w-full lg:w-[25%] flex flex-col justify-center items-start gap-3'>
             <label className={`${poppins.className} text-white font-medium`}>Seguinos</label>
-            <div className='lg:w-[15%] w-[50%] flex justify-between items-center'>
+            <div className='lg:w-full w-[50%] flex justify-start items-center gap-3'>
               {redesItems.map((item, index) => (
                 <li key={index}>
                   <Link href={item.link} target='_blank'>
@@ -72,7 +72,7 @@ const Footer = () => {
           <ul className='lg:w-[25%] w-full h-full flex justify-center items-start flex-col gap-2'>
             <label className={`${poppins.className} text-white font-medium`}>Páginas</label>
             {arrNavItems.map((item, index) => (
-              <NavItems key={index} title={item.title} href={item.href} className='text-white font-normal' />
+              <NavItems key={index} title={item.title} href={item.href} className='text-white/90 font-normal' />
             ))}
           </ul >
         </div>

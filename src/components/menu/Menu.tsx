@@ -19,7 +19,7 @@ const Menu = () => {
     {
       title: "Pastas",
       description: "Abundantes milanesas de todos los gustos existentes.",
-      image: "/fotos/pastas/Pastas.webp",
+      image: "/fotos/pastas/Pastas.png",
       href: "/pastas",
     },
     {
