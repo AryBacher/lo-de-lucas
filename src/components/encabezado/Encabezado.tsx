@@ -73,7 +73,7 @@ const Encabezado = () => {
           ))}
         </ul>
       </nav>
-      <div className='w-[30%] h-full flex justify-center items-center'>
+      <div className='w-[30%] h-full flex justify-center items-center lg:hidden'>
         <div className=" relative lg:hidden block z-50 rounded-xl">
           {
             isOpen === true || header === false ?
