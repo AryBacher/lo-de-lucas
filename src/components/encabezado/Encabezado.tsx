@@ -52,13 +52,14 @@ const Encabezado = () => {
     }
   })
   return (
-    <header className={cn(header ? "w-full h-[70px] fixed z-30 flex justify-start items-center top-0 lg:px-10 px-2 transition-all border-b-[1px] border-white/0" : "  bg-white w-full h-[70px] fixed z-30 flex justify-start items-center border-b-[1px] shadow-xl border-b-white/20 top-0 lg:px-10 px-2 transition-all",
+    <header className={cn(header ? "w-full h-[70px] fixed z-30 flex justify-start items-center top-0 lg:px-10 transition-all border-b-[1px] border-white/0" : "  bg-white w-full h-[70px] fixed z-30 flex justify-start items-center border-b-[1px] shadow-xl border-b-white/20 top-0 lg:px-10 transition-all",
       {
-        " w-full h-[70px] fixed z-30 flex justify-start items-center top-0 lg:px-10 px-2 transition-all border-b-[1px] border-white/0": header === true && params !== '/milanesas' && params !== '/pastas' && params !== '/postres' && params !== '/entradas',
+        " w-full h-[70px] fixed z-30 flex justify-start items-center top-0 lg:px-10 transition-all border-b-[1px] border-white/0": header === true && params !== '/milanesas' && params !== '/pastas' && params !== '/postres' && params !== '/entradas',
 
       })}
       id='inicio'>
-      <picture className='xl:w-[25%] h-full w-[50%] flex justify-start items-center z-10'>
+
+      <picture className='xl:w-[25%] h-full w-[60%] flex justify-end items-center z-10'>
         <Link
           href={'/#inicio'}
         >
@@ -72,15 +73,17 @@ const Encabezado = () => {
           ))}
         </ul>
       </nav>
-      <div className="relative lg:hidden block z-50 rounded-xl">
-        {
-          isOpen === true || header === false ?
-            <BarsIcon isOpen={isOpen} setIsOpen={setIsOpen} />
-            :
-            <svg onClick={() => setIsOpen(!isOpen)} width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8.3335 35.9792V33.8958H41.6668V35.9792H8.3335ZM8.3335 26.0417V23.9583H41.6668V26.0417H8.3335ZM8.3335 16.1042V14.0208H41.6668V16.1042H8.3335Z" fill="white" />
-            </svg>
-        }
+      <div className='w-[30%] h-full flex justify-center items-center'>
+        <div className=" relative lg:hidden block z-50 rounded-xl">
+          {
+            isOpen === true || header === false ?
+              <BarsIcon isOpen={isOpen} setIsOpen={setIsOpen} />
+              :
+              <svg onClick={() => setIsOpen(!isOpen)} width="50" height="50" viewBox="0 0 50 50" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.3335 35.9792V33.8958H41.6668V35.9792H8.3335ZM8.3335 26.0417V23.9583H41.6668V26.0417H8.3335ZM8.3335 16.1042V14.0208H41.6668V16.1042H8.3335Z" fill="white" />
+              </svg>
+          }
+        </div>
       </div>
       <aside
         className={cn(header ?
