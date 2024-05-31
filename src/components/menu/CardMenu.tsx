@@ -17,7 +17,7 @@ interface Props {
 
 const CardMenu = ({ href, title, image, description }: Props) => {
   return (
-    <div className="lg:w-[21%] sm:w-[45%] 2xl:w-full w-full h-max border-[1px] border-[#00084D] rounded-lg">
+    <div className="lg:w-[21%] sm:w-[45%] w-[85%] h-max border-[1px] border-[#00084D] rounded-lg">
       <div className="w-full h-[70%] rounded-t-md overflow-hidden">
         <Image
           src={image}
@@ -26,7 +26,7 @@ const CardMenu = ({ href, title, image, description }: Props) => {
           width={400}
           height={400}
           className="rounded-t-md"
-          quality={75}
+          quality={100}
           loading="lazy"
         />
       </div>

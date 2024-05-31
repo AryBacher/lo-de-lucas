@@ -19,13 +19,13 @@ const Menu = () => {
     {
       title: "Pastas",
       description: "Abundantes milanesas de todos los gustos existentes.",
-      image: "/fotos/pastas/Pastas.png",
+      image: "/fotos/pastas/Pastas.webp",
       href: "/pastas",
     },
     {
       title: "Postres",
       description: "Abundantes milanesas de todos los gustos existentes.",
-      image: "/fotos/postres/Postres.png",
+      image: "/fotos/postres/Postres.webp",
       href: "/postres",
     },
     {
@@ -44,7 +44,7 @@ const Menu = () => {
         <h1 className='text-[#00084D] w-full xl:h-auto text-3xl font-semibold  text-center'>LOS PLATOS FAVORITOS</h1>
         <p className={`${poppins.className} w-[85%] lg:w-[50%] text-container text-[#7C7C7C] text-sm text-center`}>Visita nuestro Bodegón para vivir la experiencia de comer en Lo de Lucas en carne propia.</p>
       </div>
-      <div className="w-full h-max flex items-center justify-around flex-wrap ">
+      <div className="w-full h-max flex items-center justify-around flex-wrap gap-10 lg:gap-0">
         {CardInfo.map((card, index) => {
           return (
             <CardMenu
@@ -58,11 +58,11 @@ const Menu = () => {
 
         })}
       </div>
-      <article className="w-full sm:w-[25%] flex justify-center items-center ">
+      <article className="w-full sm:w-[35%] lg:w-[25%] flex justify-center items-center ">
         <Link
           href="https://drive.google.com/file/d/1HlmRJ94kEqYx7wlLr5FsdBE0u1dRD-Lj/view"
           target='_blank'
-          className="w-full lg:w-full h-[40px] bg-[#00084D] flex flex-row justify-center items-center gap-4 rounded-xl"
+          className="w-[80%] sm:w-full h-[40px] bg-[#00084D] flex flex-row justify-center items-center gap-4 rounded-xl"
         >
           <h3 className={`${poppins.className} text-white text-base font-medium`}>
             Ver Menú

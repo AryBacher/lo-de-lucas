@@ -41,7 +41,7 @@ const Notas = () => {
     },
     {
       title: "El bodegón donde todo es...",
-      description: "Queda en Escobar pero gracias al boca en boca tienen comensales de todos lados. Sus porciones son tan...",
+      description: "Queda en Escobar pero gracias al boca en boca tienen comensales de todos lados. Sus porciones...",
       image: "/fotos/notas/LoDeLucas3.png",
       href: "https://www.clarin.com/gourmet/bodegon-gigante-sirven-milanesa-compartir-10-tortas-12-kilos_0_jUzIw7cDHQ.html",
     }
@@ -49,7 +49,7 @@ const Notas = () => {
 
   return (
     <section id='notas' className="w-full h-max flex justify-center items-center pt-10">
-      <main className="w-[80%] flex justify-center items-center flex-col gap-6">
+      <main className="w-[90%] flex justify-center items-center flex-col gap-6">
 
         <div className='w-full flex flex-col justify-center items-center gap-2'>
           <h1

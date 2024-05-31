@@ -33,7 +33,7 @@ const FooterItems = () => {
   ]
 
   return (
-    <ul className='lg:w-[30%] w-full flex justify-center lg:items-start items-center flex-col gap-4'>
+    <ul className='lg:w-[30%] w-full flex justify-center items-start flex-col gap-4'>
       <label className={`${poppins.className} text-white font-semibold`}>Horarios</label>
       {arrItems.map((item, index) => (
         <li key={index} className='w-full flex flex-row justify-start items-center gap-3'>
