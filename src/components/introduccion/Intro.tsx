@@ -17,7 +17,7 @@ const Intro = () => {
         </div>
         <div className={`${poppins.className} w-full h-2/3 flex justify-center items-center font-sans`}>
           <p className="text-center text-[#0E0E0E] ">
-            Más que un bodegón, somos el corazón de Escobar. Desde 2016, cocinamos con pasión y amor, ofreciendo platos abundantes y hogareños para disfrutar en familia y con amigos. Vení y descubrí el sabor que nos une.
+            Más que un bodegón, somos <span className='font-bold'>el corazón de Escobar</span>. Desde 2016, cocinamos con <span className='font-bold'>pasión y amor</span>, ofreciendo <span className='font-bold'>platos abundantes y hogareños</span> para disfrutar en familia y con amigos. Vení y descubrí el sabor que nos une.
           </p>
         </div>
       </div>
