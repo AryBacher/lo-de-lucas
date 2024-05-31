@@ -52,7 +52,7 @@ const Footer = () => {
   return (
     <footer className='w-full h-max bg-[#5B0D0F] flex justify-center items-center flex-col gap-8'>
       <div className='w-full h-full flex justify-center items-center flex-col'>
-        <div className='sm:w-[90%] :w-[50%] xl:w-full flex flex-col lg:flex-row justify-between lg:items-start items-center px-5 py-20 gap-10 md:gap-20'>
+        <div className='sm:w-[90%] w-[95%] xl:w-full flex flex-col lg:flex-row justify-between lg:items-start items-center px-5 py-20 gap-10 md:gap-20'>
           <picture className='lg:w-[25%] w-full flex lg:justify-start justify-center items-center'>
             <Image src={'/fotos/logo.png'} alt='' width={250} height={250} quality={75} loading="lazy"></Image>
           </picture>
