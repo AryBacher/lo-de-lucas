@@ -57,6 +57,12 @@ const Footer = () => {
             <Image src={'/fotos/logo.png'} alt='Lo De Lucas - Bodegón' width={250} height={250} quality={75} loading="lazy"></Image>
           </picture>
           <FooterItems />
+          <ul className='lg:w-[25%] w-full h-full flex justify-center items-start flex-col gap-2'>
+            <label className={`${poppins.className} text-white font-medium`}>Páginas</label>
+            {arrNavItems.map((item, index) => (
+              <NavItems key={index} title={item.title} href={item.href} className='text-white/90 font-normal' />
+            ))}
+          </ul >
           <ul className='w-full lg:w-[25%] flex flex-col justify-center items-start gap-3'>
             <label className={`${poppins.className} text-white font-medium`}>Seguinos</label>
             <div className='lg:w-full w-[50%] flex justify-start items-center gap-3'>
@@ -69,12 +75,6 @@ const Footer = () => {
               ))}
             </div>
           </ul>
-          <ul className='lg:w-[25%] w-full h-full flex justify-center items-start flex-col gap-2'>
-            <label className={`${poppins.className} text-white font-medium`}>Páginas</label>
-            {arrNavItems.map((item, index) => (
-              <NavItems key={index} title={item.title} href={item.href} className='text-white/90 font-normal' />
-            ))}
-          </ul >
         </div>
         <div className="w-full h-max flex items-center justify-center border-t-[1px] border-white/20 flex-col pb-4">
           <small className={`${poppins.className} text-center text-white text-sm font-medium mt-2 `}>
