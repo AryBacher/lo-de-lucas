@@ -55,7 +55,7 @@ const Ubi = () => {
             </Link >
           </ul>
         </div>
-        <div className='lg:w-[50%] 2xl:w-[70%] w-full lg:h-[300px] 2xl:h-[450px] md:h-[250px] h-[275px] shadow-lg border-[1px] border-[#AD00FF] bg-gray-300 order-1 lg:order-2' style={{ backgroundImage: 'url("/fotos/ubicacion.png")' }}>
+        <div className='lg:w-[50%] 2xl:w-[70%] w-full lg:h-[300px] 2xl:h-[450px] md:h-[250px] h-[275px] shadow-xl bg-gray-300 order-1 lg:order-2' style={{ backgroundImage: 'url("/fotos/ubicacion.png")' }}>
           <picture className='w-full h-full rounded-lg overflow-hidden'>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d605.1493030637588!2d-58.794455998447205!3d-34.3523981135305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb61b77bef62b9%3A0x346fd3d5c84c5ebb!2sLo%20De%20Lucas%20Bodeg%C3%B3n!5e0!3m2!1ses-419!2sar!4v1717183057303!5m2!1ses-419!2sar" className='w-full h-full focus:outline-none' loading="lazy" ></iframe>
           </picture>
