@@ -60,7 +60,7 @@ const Encabezado = () => {
       })}
       id='inicio'>
 
-      <picture className='xl:w-[25%] h-full w-[60%] flex justify-center items-center z-10'>
+      <picture className='xl:w-[25%] h-full w-[60%] flex justify-center lg:justify-start items-center z-10'>
         <Link
           href={'/#inicio'}
         >
