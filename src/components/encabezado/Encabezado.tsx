@@ -37,7 +37,8 @@ const Encabezado = () => {
 
 
   const scrollHandler = () => {
-    if (window.scrollY >= 80 || params === '/milanesas' || params === '/pastas' || params === '/postres' || params === '/entradas') {
+    const Screen = window.innerHeight
+    if (window.scrollY >= Screen - 50 || params === '/milanesas' || params === '/pastas' || params === '/postres' || params === '/entradas') {
       setHeader(false)
     } else {
       setHeader(true)
