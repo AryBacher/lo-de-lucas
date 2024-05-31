@@ -52,9 +52,9 @@ const Encabezado = () => {
     }
   })
   return (
-    <header className={cn(header ? "w-full h-[70px] fixed z-30 flex justify-start items-center top-0 lg:px-10 px-4 transition-all border-b-[1px] border-white/0" : "  bg-white w-full h-[70px] fixed z-30 flex justify-start items-center border-b-[1px] shadow-xl border-b-white/20 top-0 lg:px-10 px-4 transition-all",
+    <header className={cn(header ? "w-full h-[70px] fixed z-30 flex justify-start items-center top-0 lg:px-10 px-2 transition-all border-b-[1px] border-white/0" : "  bg-white w-full h-[70px] fixed z-30 flex justify-start items-center border-b-[1px] shadow-xl border-b-white/20 top-0 lg:px-10 px-2 transition-all",
       {
-        " w-full h-[70px] fixed z-30 flex justify-start items-center top-0 lg:px-10 px-4 transition-all border-b-[1px] border-white/0": header === true && params !== '/milanesas' && params !== '/pastas' && params !== '/postres' && params !== '/entradas',
+        " w-full h-[70px] fixed z-30 flex justify-start items-center top-0 lg:px-10 px-2 transition-all border-b-[1px] border-white/0": header === true && params !== '/milanesas' && params !== '/pastas' && params !== '/postres' && params !== '/entradas',
 
       })}
       id='inicio'>
@@ -84,9 +84,9 @@ const Encabezado = () => {
       </div>
       <aside
         className={cn(header ?
-          "fixed top-0 left-0 w-full h-screen bg-white lg:hidden flex -translate-x-full transition-all duration-500 justify-between items-center" :
+          "fixed top-0 left-0 w-full h-screen bg-white lg:hidden flex flex-col -translate-x-full transition-all duration-500 justify-between items-center" :
 
-          "fixed top-0 left-0 w-full h-screen bg-white lg:hidden flex -translate-x-full transition-all duration-500 justify-between items-center",
+          "fixed top-0 left-0 w-full h-screen bg-white lg:hidden flex flex-col -translate-x-full transition-all duration-500 justify-between items-center",
 
           {
             "translate-x-0 transition-all duration-500 backdrop-filter": isOpen,
@@ -94,6 +94,7 @@ const Encabezado = () => {
         )}
       >
         <div className="w-full h-[calc(100vh_-_80px)] flex items-center justify-start flex-col mt-20">
+          <span className='w-[90%] h-[1px] bg-black'></span>
           <ul className="w-[90%] h-max flex items-start justify-start flex-col gap-12 mt-12">
             {arrItems.map((item, index) => (
               <NavItems
