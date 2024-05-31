@@ -28,8 +28,8 @@ const Testimonios = () => {
       testimonio: 'Las porciones son muy grandes 😌 pedimos una milanesa, unas papas con cheddar, y los bastóncitos de muzzarella con una coca grande...'
     },
     {
-      name: 'María Julieta Pérez Corneli',
-      testimonio: 'Pese a que ya desde antes de las 8 de la noche había fila para comer y eso en otro lugar me desalentaria por la espera, valió completamente la pena!...'
+      name: 'Alicia Diaz Hutter',
+      testimonio: 'Es un lugar agradable, pocas mesas...vayan temprano. Las milanesas son como para 4 o 5 personas, deliciosa!  Las tortas se veían gigantes, la próxima vez probaré 😋🐷'
     },
     {
       name: 'María Julieta Pérez Corneli',

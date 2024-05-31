@@ -59,7 +59,7 @@ const Notas = () => {
           </h1>
           <p className={`${poppins.className} w-[40%] text-sm text-[#7C7C7C] hidden md:block text-center`}>Escuche directamente del propietario de nuestro bodegón su visión y pasión por brindar una experiencia gastronómica excepcional.</p>
         </div>
-        <div className="w-full h-max flex justify-center items-center flex-col flex-wrap lg:flex-row gap-10">
+        <div className="w-full h-max flex justify-center items-center flex-col flex-wrap lg:flex-row gap-12">
           {CardInfo.map((card, index) => {
             return (
               <CardNotas
