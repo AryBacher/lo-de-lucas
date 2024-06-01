@@ -58,7 +58,7 @@ const Menu = () => {
 
         })}
       </div>
-      <article className="w-full sm:w-[35%] lg:w-[25%] flex justify-center items-center ">
+      <article className="w-[85%] sm:w-[35%] lg:w-[25%] flex justify-center items-center ">
         <Link
           href="https://drive.google.com/file/d/1HlmRJ94kEqYx7wlLr5FsdBE0u1dRD-Lj/view"
           target='_blank'
