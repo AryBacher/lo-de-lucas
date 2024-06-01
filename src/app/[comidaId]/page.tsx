@@ -1,11 +1,16 @@
 "use client"
 import Comida from "@/components/helpers/Comida";
+import { Poppins } from "next/font/google";
 import { useParams } from "next/navigation";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 
 export default function ComidaHome() {
   const params = useParams();
-  console.log(params);
 
   const MilanesasArr = [
     {
@@ -58,8 +63,23 @@ export default function ComidaHome() {
     },
     {
       id: 2,
-      title: 'Canelones de verdura con estofado',
+      title: 'Canelones con estofado',
       image: "/fotos/pastas/Canelones.png"
+    },
+    {
+      id: 3,
+      title: 'Sorrentinos con estofado',
+      image: "/fotos/pastas/Sorrentinos.jpg"
+    },
+    {
+      id: 4,
+      title: 'Raviolones con estofado',
+      image: "/fotos/pastas/Raviolones.jpg"
+    },
+    {
+      id: 5,
+      title: 'Fideos con estofado',
+      image: "/fotos/pastas/Fideos.jpg"
     },
   ]
   const Pastas = PastasArr.map((item) => {
@@ -169,28 +189,28 @@ export default function ComidaHome() {
       {
         params.comidaId === 'milanesas' ? (
           <section className="w-full h-full flex flex-col justify-center items-center gap-5">
-            <h1 className="text-3xl font-bold">Milanesas</h1>
+            <h1 className={`${poppins.className} text-3xl font-bold`}>Milanesas</h1>
             <div className="w-full h-full flex flex-wrap justify-center lg:items-start items-center gap-5">
               {Milanesas}
             </div>
           </section>
         ) : params.comidaId === 'pastas' ? (
           <section className="w-full h-full flex flex-col justify-center items-center gap-5">
-            <h1 className="text-3xl font-bold">Pastas</h1>
+            <h1 className={`${poppins.className} text-3xl font-bold`}>Pastas</h1>
             <div className="w-full h-full flex flex-wrap justify-center items-center gap-5">
               {Pastas}
             </div>
           </section>
         ) : params.comidaId === 'postres' ? (
           <section className="w-full h-full flex flex-col justify-center items-center gap-5">
-            <h1 className="text-3xl font-bold">Postres</h1>
+            <h1 className={`${poppins.className} text-3xl font-bold`}>Postres</h1>
             <div className="w-full h-full flex flex-wrap justify-center items-center gap-5">
               {Postres}
             </div>
           </section>
         ) : params.comidaId === 'entradas' ? (
           <section className="w-full h-full flex flex-col justify-center items-center gap-5">
-            <h1 className="text-3xl font-bold">Entradas</h1>
+            <h1 className={`${poppins.className} text-3xl font-bold`}>Entradas</h1>
             <div className="w-full h-full flex flex-wrap justify-center items-center gap-5">
               {Entradas}
             </div>

@@ -62,7 +62,7 @@ const Menu = () => {
         <Link
           href="https://drive.google.com/file/d/1HlmRJ94kEqYx7wlLr5FsdBE0u1dRD-Lj/view"
           target='_blank'
-          className="w-[80%] sm:w-full h-[40px] bg-[#00084D] flex flex-row justify-center items-center gap-4 rounded-xl"
+          className="sm:w-[80%] w-full lg:w-[80%] h-[40px] bg-[#00084D] flex flex-row justify-center items-center gap-4 rounded-xl"
         >
           <h3 className={`${poppins.className} text-white text-base font-medium`}>
             Ver Menú
