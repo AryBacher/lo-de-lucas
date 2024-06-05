@@ -52,18 +52,18 @@ const Footer = () => {
   return (
     <footer className='w-full h-max bg-[#5B0D0F] flex justify-center items-center flex-col gap-8'>
       <div className='w-full h-full flex justify-center items-center flex-col'>
-        <div className='sm:w-[90%] w-[95%] xl:w-full flex flex-col lg:flex-row justify-between lg:items-start items-center px-5 py-20 gap-10 md:gap-20'>
-          <picture className='lg:w-[25%] w-full flex lg:justify-start justify-center items-center'>
+        <div className='sm:w-[90%] w-[95%] xl:w-full flex flex-col lg:flex-row justify-between lg:items-start items-center px-5 py-20 gap-10 md:gap-0'>
+          <picture className='lg:w-[20%] w-full flex justify-center items-center'>
             <Image src={'/fotos/logo.png'} alt='Lo De Lucas - Bodegón' width={250} height={250} quality={75} loading="lazy"></Image>
           </picture>
           <FooterItems />
-          <ul className='lg:w-[25%] w-full h-full flex justify-center items-start flex-col gap-2'>
+          <ul className='lg:w-[15%] w-full h-full flex justify-center items-start flex-col gap-2'>
             <label className={`${poppins.className} text-white font-medium`}>Páginas</label>
             {arrNavItems.map((item, index) => (
               <NavItems key={index} title={item.title} href={item.href} className='text-white/90 font-normal' />
             ))}
           </ul >
-          <ul className='w-full lg:w-[25%] flex flex-col justify-center items-start gap-3'>
+          <ul className='w-full lg:w-[15%] flex flex-col justify-center items-start gap-3'>
             <label className={`${poppins.className} text-white font-medium`}>Seguinos</label>
             <div className='lg:w-full w-[50%] flex justify-start items-center gap-3'>
               {redesItems.map((item, index) => (
