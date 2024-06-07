@@ -158,7 +158,7 @@ export default function ComidaHome() {
     },
     {
       id: 4,
-      title: 'tortilla de papas',
+      title: 'Tortilla de papas',
       image: "/fotos/entradas/Tortilla.png"
     },
     {
