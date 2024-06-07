@@ -190,28 +190,28 @@ export default function ComidaHome() {
         params.comidaId === 'milanesas' ? (
           <section className="w-full h-full flex flex-col justify-center items-center gap-5">
             <h1 className={`${poppins.className} text-3xl font-bold`}>Milanesas</h1>
-            <div className="w-full h-full flex flex-wrap justify-center lg:items-start items-center gap-5">
+            <div className="w-full h-full flex flex-wrap justify-center lg:items-start items-center gap-16">
               {Milanesas}
             </div>
           </section>
         ) : params.comidaId === 'pastas' ? (
           <section className="w-full h-full flex flex-col justify-center items-center gap-5">
             <h1 className={`${poppins.className} text-3xl font-bold`}>Pastas</h1>
-            <div className="w-full h-full flex flex-wrap justify-center items-center gap-5">
+            <div className="w-full h-full flex flex-wrap justify-center items-center gap-16">
               {Pastas}
             </div>
           </section>
         ) : params.comidaId === 'postres' ? (
           <section className="w-full h-full flex flex-col justify-center items-center gap-5">
             <h1 className={`${poppins.className} text-3xl font-bold`}>Postres</h1>
-            <div className="w-full h-full flex flex-wrap justify-center items-center gap-5">
+            <div className="w-full h-full flex flex-wrap justify-center items-center gap-16">
               {Postres}
             </div>
           </section>
         ) : params.comidaId === 'entradas' ? (
           <section className="w-full h-full flex flex-col justify-center items-center gap-5">
             <h1 className={`${poppins.className} text-3xl font-bold`}>Entradas</h1>
-            <div className="w-full h-full flex flex-wrap justify-center items-center gap-5">
+            <div className="w-full h-full flex flex-wrap justify-center items-center gap-16">
               {Entradas}
             </div>
           </section>

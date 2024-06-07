@@ -11,28 +11,28 @@ const poppins = Poppins({
 const Menu = () => {
   const CardInfo = [
     {
+      title: "Entradas",
+      description: "¡Comienza tu experiencia con un toque de sabor!",
+      image: "/fotos/entradas/Papas.png",
+      href: "/entradas",
+    },
+    {
       title: "Milanesas",
-      description: "Abundantes milanesas de todos los gustos existentes.",
+      description: "¡Nada mejor que milanesas caseras!",
       image: "/fotos/milanesas/Milanesa.webp",
       href: "/milanesas",
     },
     {
       title: "Pastas",
-      description: "Abundantes milanesas de todos los gustos existentes.",
+      description: "¡Sabores que evocan la tradición italiana!",
       image: "/fotos/pastas/Pastas.png",
       href: "/pastas",
     },
     {
       title: "Postres",
-      description: "Abundantes milanesas de todos los gustos existentes.",
+      description: "¡Un final dulce e inolvidable!",
       image: "/fotos/postres/Postres.webp",
       href: "/postres",
-    },
-    {
-      title: "Entradas",
-      description: "Abundantes milanesas de todos los gustos existentes.",
-      image: "/fotos/entradas/Papas.png",
-      href: "/entradas",
     }
   ]
   return (

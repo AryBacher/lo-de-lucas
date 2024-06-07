@@ -64,9 +64,7 @@ const Encabezado = () => {
         <Link
           href={'/#inicio'}
         >
-          {
-            header ? <Image src={'/fotos/logo.png'} alt='Logo Lo de Lucas' width={80} height={80} quality={100} loading="lazy"></Image> : <Image src={'/fotos/logoBlack.png'} alt='Logo Lo de Lucas' width={80} height={80} quality={100} loading="lazy"></Image>
-          }
+          <Image src={'/fotos/logo.png'} alt='Logo Lo de Lucas' width={80} height={80} quality={100} loading="lazy"></Image>
         </Link>
       </picture>
       <nav className='w-[65%] lg:w-full xl:w-[75%] h-full flex justify-end items-center xl:ml-28'>

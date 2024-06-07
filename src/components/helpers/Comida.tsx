@@ -26,7 +26,7 @@ const Comida = ({ title, image }: ComidaProps) => {
           className="w-full h-[20%] flex justify-start items-center flex-col"
         >
           <div className="w-full h-1/3 flex justify-start items-center">
-            <h2 className={`${poppins.className} text-start text-2xl font-semibold`}>{title}</h2>
+            <h2 className={`${poppins.className} text-start text-xl 2xl:text-2xl font-semibold`}>{title}</h2>
           </div>
         </div>
       </div>
