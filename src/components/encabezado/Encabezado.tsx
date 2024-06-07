@@ -64,7 +64,7 @@ const Encabezado = () => {
         <Link
           href={'/#inicio'}
         >
-          {isOpen === false || header === false ? <Image src={'/fotos/logo.png'} alt='Logo Lo de Lucas' width={70} height={70} quality={75} loading="lazy"></Image> : <Image src={'/fotos/LogoBlack.png'} alt='Logo Lo de Lucas' width={70} height={70} quality={75} loading="lazy"></Image>}
+          {isOpen === false && header === true ? <Image src={'/fotos/logo.png'} alt='Logo Lo de Lucas' width={70} height={70} quality={75} loading="lazy"></Image> : <Image src={'/fotos/LogoBlack.png'} alt='Logo Lo de Lucas' width={70} height={70} quality={75} loading="lazy"></Image>}
         </Link>
       </picture>
       <nav className='w-[50%] lg:w-full xl:w-[75%] h-full flex justify-end items-center xl:ml-28'>
