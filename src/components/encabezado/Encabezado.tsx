@@ -53,28 +53,28 @@ const Encabezado = () => {
     }
   })
   return (
-    <header className={cn(header ? "w-full h-[70px] fixed z-30 flex justify-start items-center top-0 lg:px-10 transition-all border-b-[1px] border-white/0" : "  bg-white w-full h-[70px] fixed z-30 flex justify-start items-center border-b-[1px] shadow-xl border-b-white/20 top-0 lg:px-10 transition-all",
+    <header className={cn(header ? "w-full h-[80px] fixed z-30 flex sm:justify-start justify-center items-center top-0 lg:px-10 transition-all border-b-[1px] border-white/0" : "  bg-white w-full h-[80px] fixed z-30 flex justify-start items-center border-b-[1px] shadow-xl border-b-white/20 top-0 lg:px-10 transition-all",
       {
-        " w-full h-[70px] fixed z-30 flex justify-start items-center top-0 lg:px-10 transition-all border-b-[1px] border-white/0": header === true && params !== '/milanesas' && params !== '/pastas' && params !== '/postres' && params !== '/entradas',
+        " w-full h-[80px] fixed z-30 flex justify-start items-center top-0 lg:px-10 transition-all border-b-[1px] border-white/0": header === true && params !== '/milanesas' && params !== '/pastas' && params !== '/postres' && params !== '/entradas',
 
       })}
       id='inicio'>
 
-      <picture className='xl:w-[25%] h-full w-[60%] flex justify-center lg:justify-start items-center z-10'>
+      <picture className='xl:w-[25%] h-full w-[25%] flex justify-center lg:justify-start items-center z-10'>
         <Link
           href={'/#inicio'}
         >
-          <Image src={'/fotos/logo.png'} alt='Logo Lo de Lucas' width={80} height={80} quality={100} loading="lazy"></Image>
+          {header ? <Image src={'/fotos/logo.png'} alt='Logo Lo de Lucas' width={70} height={70} quality={75} loading="lazy"></Image> : <Image src={'/fotos/LogoBlack.png'} alt='Logo Lo de Lucas' width={70} height={70} quality={75} loading="lazy"></Image>}
         </Link>
       </picture>
-      <nav className='w-[65%] lg:w-full xl:w-[75%] h-full flex justify-end items-center xl:ml-28'>
+      <nav className='w-[50%] lg:w-full xl:w-[75%] h-full flex justify-end items-center xl:ml-28'>
         <ul className='lg:flex hidden w-[75%] lg:w-full xl:w-[75%] justify-between items-center'>
           {arrItems.map((item, index) => (
             <NavItems key={index} title={item.title} href={item.href} className={cn(header ? "text-white" : "text-black")} />
           ))}
         </ul>
       </nav>
-      <div className='w-[30%] h-full flex justify-center items-center lg:hidden'>
+      <div className='w-[25%] h-full flex justify-center items-center lg:hidden'>
         <div className=" relative lg:hidden block z-50 rounded-xl">
           {
             isOpen === true || header === false ?
