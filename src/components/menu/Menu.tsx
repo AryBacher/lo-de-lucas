@@ -1,7 +1,6 @@
 import React from 'react'
 import CardMenu from './CardMenu'
 import { Poppins } from 'next/font/google'
-import Image from 'next/image';
 import Link from 'next/link';
 
 const poppins = Poppins({
@@ -42,7 +41,7 @@ const Menu = () => {
     >
       <div className='w-full h-1/6 flex justify-center items-center flex-col gap-2'>
         <h1 className='text-[#00084D] w-full xl:h-auto text-3xl font-semibold  text-center'>LOS PLATOS FAVORITOS</h1>
-        <p className={`${poppins.className} w-[85%] lg:w-[50%] text-container text-[#7C7C7C] text-sm text-center`}>Visita nuestro Bodegón para vivir la experiencia de comer en Lo de Lucas en carne propia.</p>
+        <p className={`${poppins.className} w-[85%] lg:w-[50%] text-container text-[#7C7C7C] text-sm text-center`}>Visita nuestro Bodegón y descubre por qué Lo de Lucas es el lugar favorito para disfrutar de una comida inolvidable.</p>
       </div>
       <div className="w-full h-max flex items-center justify-center flex-wrap gap-10 lg:gap-12">
         {CardInfo.map((card, index) => {
