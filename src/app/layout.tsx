@@ -10,7 +10,13 @@ const oswald = Oswald({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Lo de Lucas",
   description: "Bodegón de comida argentina en la ciudad de Buenos Aires",
-};
+  icons: [
+    {
+      rel: "icon",
+      type: "image/png",
+      url: "/favicon.ico",
+    },]
+}
 
 export default function RootLayout({
   children,
@@ -18,12 +24,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
-      <body className={`${oswald.className}`}>
-        <Encabezado />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <>
+      <head>
+        <script src="https://widget.trustmary.com/XCm0Zr-yO"></script>
+      </head>
+      <html lang="es">
+        <body className={`${oswald.className}`}>
+          <Encabezado />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </>
   );
 }
