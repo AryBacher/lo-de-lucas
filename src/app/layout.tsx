@@ -25,9 +25,6 @@ export default function RootLayout({
 }>) {
   return (
     <>
-      <head>
-        <script src="https://widget.trustmary.com/XCm0Zr-yO"></script>
-      </head>
       <html lang="es">
         <body className={`${oswald.className}`}>
           <Encabezado />
