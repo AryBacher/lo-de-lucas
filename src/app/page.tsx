@@ -14,7 +14,6 @@ export default function Home() {
       <Portada />
       <Intro />
       <Menu />
-      <Novedades />
       <Notas />
       <Reels />
       <Ubicacion />

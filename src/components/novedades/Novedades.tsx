@@ -52,7 +52,7 @@ const Novedades = () => {
           align: "center",
           loop: true,
         }}
-        className='w-[85%] h-[50%] flex justify-center items-center gap-5'
+        className='w-[85%] h-[50%] 2xl:h-[30%] flex justify-center items-center gap-5'
       >
         <span className='w-[10%] h-full'>
           <CarouselPrevious className='w-[45px] h-[45px] border-[3px] border-[#3394BB] ' />
