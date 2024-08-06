@@ -16,7 +16,7 @@ const Reels = () => {
       description:
         "El local de Lucas Deonato y Natalia Estanguet se transformó en un boom gastronómico...",
       image: "/fotos/Influ-1.png",
-      href: "https://www.instagram.com/reel/CtKq7MKg-H-",
+      href: "https://www.instagram.com/revistacaras/reel/C7WoPhxuJsZ",
     },
     {
       title:
