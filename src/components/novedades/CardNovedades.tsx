@@ -18,7 +18,7 @@ const poppins = Poppins({
 
 const CardNovedades = ({ title, description, image }: CardNovedadesProps) => {
   return (
-    <CarouselItem className='w-full flex justify-center items-center -pl-4'>
+    <CarouselItem className='w-full flex justify-center items-center -pl-4 px-10'>
       <article className='w-full h-full flex justify-center items-center flex-row gap-10'>
         <PictureFrame
           alt={title}
