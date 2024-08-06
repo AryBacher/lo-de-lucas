@@ -13,7 +13,7 @@ export default function Component() {
         <button className={`${poppins.className} w-52 h-10 bg-[#710996] rounded-lg text-white font-medium`}>Enviar reseña</button>
       </AlertDialogTrigger>
       <AlertDialogContent className="h-[650px] sm:h-[550px] xs:w-[80%] sm:w-[500px] w-[95%]">
-        <AlertDialogHeader className="h-[10%]">
+        <AlertDialogHeader className="h-[10%] text-start">
           <AlertDialogTitle className={`${poppins.className}`}>Comparte tu reseña</AlertDialogTitle>
           <AlertDialogDescription className={`${poppins.className} h-[90%]`}>
             <label className={`${poppins.className} text-[#710996]`}>Contanos acerca de tu experiencia en el bodegón.</label>

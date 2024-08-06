@@ -54,9 +54,6 @@ const Footer = () => {
     <footer className='w-full h-max bg-[#5B0D0F] flex justify-center items-center flex-col gap-8'>
       <div className='w-full h-full flex justify-center items-center flex-col'>
         <div className='sm:w-[90%] w-[95%] xl:w-full flex flex-col lg:flex-row justify-between lg:items-start items-center px-5 py-20 gap-10 md:gap-0'>
-          <picture className='lg:w-[20%] w-full flex justify-center items-center'>
-            <Image src={'/fotos/logo.png'} alt='Lo De Lucas - Bodegón' width={250} height={250} quality={75} loading="lazy"></Image>
-          </picture>
           <PictureFrame
             alt='Lo De Lucas - Bodegón'
             width={250}
