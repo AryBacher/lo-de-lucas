@@ -48,7 +48,7 @@ const Reels = () => {
 
         <div className='w-full flex flex-col justify-center items-center gap-2'>
           <Title title='VIDEOS DE INFLUENCERS DESTACADOS' className="text-[#00960F] w-full xl:h-auto text-3xl font-semibold  text-center " />
-          <p className={`${poppins.className} w-[40%] text-sm text-[#7C7C7C] hidden md:block text-center`}>Escuche directamente del propietario de nuestro bodegón su visión y pasión por brindar una experiencia gastronómica excepcional.</p>
+          <p className={`${poppins.className} w-[40%] text-sm text-[#7C7C7C] hidden md:block text-center`}>Mira los últimos reels de influencers que han visitado nuestro restaurante.</p>
         </div>
         <div className="w-full h-max flex justify-center items-center flex-col flex-wrap lg:flex-row gap-12">
           {CardInfo.map((card, index) => {
