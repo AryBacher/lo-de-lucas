@@ -9,6 +9,8 @@ import {
 import CardTestimonios from './CardTestimonios'
 import Autoplay from "embla-carousel-autoplay"
 import { Poppins } from 'next/font/google';
+import ButtonReview from './review/ButtonReview'
+import Title from '../helpers/Title'
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -45,7 +47,9 @@ const Testimonios = () => {
 
     <main id='testimonios' className='w-full h-max flex flex-col justify-center items-center gap-5 pb-20'>
       <div className='flex justify-center items-center flex-col gap-2'>
-        <h1 className='text-[#710996] w-full xl:h-auto text-3xl font-semibold text-center'>TESTIMONIOS DE NUESTROS CLIENTES</h1>
+        <Title
+          title='TESTIMONIOS DE NUESTROS CLIENTES'
+          className="text-[#710996] w-full xl:h-auto text-3xl font-semibold  text-center" />
         <p className={`${poppins.className} w-[80%] text-sm text-[#7C7C7C] hidden md:block text-center`}>Escuche a nuestros clientes satisfechos acerca de su experiencia con nuestro restaurante.</p>
       </div>
       <Carousel
@@ -70,6 +74,9 @@ const Testimonios = () => {
           ))}
         </CarouselContent>
       </Carousel>
+      <div>
+        <ButtonReview />
+      </div>
     </main>
   )
 }

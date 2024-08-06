@@ -1,7 +1,5 @@
 import { cn } from '@/lib/utils'
 import { Poppins } from 'next/font/google'
-import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 import Title from '../helpers/Title'
 import PictureFrame from '../helpers/PictureFrame'
@@ -27,12 +25,12 @@ const CardNotas = ({ href, title, image, description, className }: Props) => {
       <PictureFrame
         alt='Bodeón Lo De Lucas'
         width={400}
-        height={400}
+        height={500}
         image={image}
         imageClassName='rounded-2xl w-full h-full'
         divClassName='w-full h-[55%] rounded-t-lg overflow-hidden'
       />
-      <div className={cn("w-full h-[45%] flex justify-start items-center flex-col gap-2")}>
+      <div className={cn("w-full h-[35%] flex justify-start items-center flex-col gap-2")}>
         <Title title={title} divClassName='w-full h-1/4 flex justify-start items-center' className={`${poppins.className} w-full text-start text-xl font-bold `} />
         <div className={cn("w-full h-3/4 flex justify-center items-start flex-col gap-4")}>
           <p className={cn(`${poppins.className} w-full text-container text-[#7C7C7C] text-base text-start font-oswald`)}>
@@ -40,7 +38,7 @@ const CardNotas = ({ href, title, image, description, className }: Props) => {
           </p>
           <Button
             title='Leer más'
-            className={cn(`${poppins.className} w-full h-10 bg-[#E1AF00] text-base rounded-xl flex justify-center items-center font-medium p-2 text-white`)}
+            className={cn(`${poppins.className} w-full h-10 bg-[#00960F] text-base rounded-xl flex justify-center items-center font-medium p-2 text-white`)}
             href={href}
           ></Button>
         </div>

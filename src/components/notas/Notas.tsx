@@ -1,6 +1,7 @@
 import React from 'react'
-import CardNotas from './CardNotas'
+import PrincipalCard from './CardNotas'
 import { Poppins } from 'next/font/google';
+import Title from '../helpers/Title';
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -52,17 +53,13 @@ const Notas = () => {
       <main className="w-[90%] flex justify-center items-center flex-col gap-6">
 
         <div className='w-full flex flex-col justify-center items-center gap-2'>
-          <h1
-            className="text-[#E1AF00] w-full xl:h-auto text-3xl font-semibold  text-center "
-          >
-            NOTAS Y ENTREVISTAS
-          </h1>
+          <Title title='NOTAS Y ENTREVISTAS' className="text-[#E1AF00] w-full xl:h-auto text-3xl font-semibold  text-center " />
           <p className={`${poppins.className} w-[40%] text-sm text-[#7C7C7C] hidden md:block text-center`}>Escuche directamente del propietario de nuestro bodegón su visión y pasión por brindar una experiencia gastronómica excepcional.</p>
         </div>
         <div className="w-full h-max flex justify-center items-center flex-col flex-wrap lg:flex-row gap-12">
           {CardInfo.map((card, index) => {
             return (
-              <CardNotas
+              <PrincipalCard
                 key={index}
                 title={card.title}
                 description={card.description}

@@ -4,6 +4,7 @@ import React from 'react'
 import FooterItems from './FooterItems'
 import NavItems from '../encabezado/NavItems'
 import { Poppins } from 'next/font/google'
+import PictureFrame from '../helpers/PictureFrame'
 
 
 const poppins = Poppins({
@@ -56,6 +57,13 @@ const Footer = () => {
           <picture className='lg:w-[20%] w-full flex justify-center items-center'>
             <Image src={'/fotos/logo.png'} alt='Lo De Lucas - Bodegón' width={250} height={250} quality={75} loading="lazy"></Image>
           </picture>
+          <PictureFrame
+            alt='Lo De Lucas - Bodegón'
+            width={250}
+            height={250}
+            image='/fotos/logo.png'
+            divClassName='lg:w-[20%] w-full flex justify-center items-center'
+          />
           <FooterItems />
           <ul className='lg:w-[15%] w-full h-full flex justify-center items-start flex-col gap-2'>
             <label className={`${poppins.className} text-white font-medium`}>Páginas</label>
