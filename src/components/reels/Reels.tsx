@@ -29,7 +29,7 @@ const Reels = () => {
     {
       title: "La historia detrás del bodegón Lo de Lucas, el restaurante de Escobar que...",
       description:
-        "La tercera edición de las estatuillas más populares de la industria gastronómica...  ",
+        "El local de Lucas Deonato y Natalia Estanguet se transformó en un boom gastronómico...",
       image: "/fotos/Influ-3.png",
       href: "https://www.instagram.com/p/C1aDTsrNt07",
     },
