@@ -16,7 +16,7 @@ const Reels = () => {
       description:
         "El local de Lucas Deonato y Natalia Estanguet se transformó en un boom gastronómico...",
       image: "/fotos/Influ-1.png",
-      href: "",
+      href: "https://www.instagram.com/reel/CtKq7MKg-H-",
     },
     {
       title:
@@ -24,14 +24,14 @@ const Reels = () => {
       description:
         "Cuando se elige a un bodegón para ir a comer se da por sentado que las porciones...",
       image: "/fotos/Influ-2.png",
-      href: "",
+      href: "https://www.instagram.com/reel/CuiL97NM6iN",
     },
     {
       title: "La historia detrás del bodegón Lo de Lucas, el restaurante de Escobar que...",
       description:
         "La tercera edición de las estatuillas más populares de la industria gastronómica...  ",
       image: "/fotos/Influ-3.png",
-      href: "",
+      href: "https://www.instagram.com/p/C1aDTsrNt07",
     },
   ]
   return (
