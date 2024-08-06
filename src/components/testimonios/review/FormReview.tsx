@@ -9,7 +9,7 @@ const poppins = Poppins({
 
 const FormReview = () => {
   return (
-    <form action="" className="w-full h-full flex justify-evenly items-center flex-col gap-5">
+    <form action="" className="w-full h-full flex justify-evenly items-center flex-col gap-5 rounded-lg">
       <div className="w-full flex sm:flex-row flex-col gap-5">
         <div className="flex flex-col w-full gap-1">
           <label className={`${poppins.className} font-medium xs:text-base text-sm`}>Nombre</label>
