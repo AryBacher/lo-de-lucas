@@ -24,7 +24,7 @@ const CardNotas = ({ title, href, description, className }: Props) => {
 
   return (
     <div className={cn("w-full md:w-[50%] lg:w-[30%] 2xl:w-[25%] h-max flex justify-center items-center flex-col gap-3 rounded-lg")}>
-      <div className='w-full h-[400px] rounded-t-lg overflow-hidden'>
+      <div className='w-full h-[475px] rounded-t-lg overflow-hidden'>
         <InstagramEmbed href={href} />
       </div>
       <div className={cn("w-full h-[25%] flex justify-start items-center flex-col gap-2")}>
