@@ -16,7 +16,15 @@ const Reels = () => {
       description:
         "El local de Lucas Deonato y Natalia Estanguet se transformó en un boom gastronómico...",
       image: "/fotos/Influ-1.png",
-      href: "https://www.instagram.com/revistacaras/reel/C7WoPhxuJsZ",
+      href: "https://www.instagram.com/p/C0MkH0ROs-v",
+    },
+    {
+      title:
+        'La historia detrás del bodegón Lo de Lucas, el restaurante de Escobar que...',
+      description:
+        "El local de Lucas Deonato y Natalia Estanguet se transformó en un boom gastronómico...",
+      image: "/fotos/Influ-1.png",
+      href: "https://www.instagram.com/p/CtKq7MKg-H-",
     },
     {
       title:
