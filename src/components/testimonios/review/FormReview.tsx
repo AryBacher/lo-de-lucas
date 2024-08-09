@@ -1,30 +1,122 @@
-import React from 'react'
-import { Poppins } from "next/font/google";
-import Rating from "./Rating";
+import React, { Dispatch, SetStateAction, useState } from "react"
+import { Poppins } from "next/font/google"
+import Rating from "./Rating"
+import { toast } from "sonner"
+import { FormSchema } from "@/schema/FormSchema"
+import { AlertDialogCancel } from "@radix-ui/react-alert-dialog"
 
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
+})
 
-const FormReview = () => {
+export type FormProps = {
+  name: string
+  lastname: string
+  message: string
+  rating: string
+}
+
+type FormReviewProps = {
+  setTestimonials: Dispatch<SetStateAction<FormProps[]>>
+  setOpen: Dispatch<SetStateAction<boolean>>
+}
+
+const FormReview = ({ setTestimonials, setOpen }: FormReviewProps) => {
+  const [isLoading, setIsLoading] = useState(false)
+  const [rating, setRating] = useState(0)
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setIsLoading(true)
+
+    try {
+      const formData = new FormData(e.currentTarget)
+      const values = Object.fromEntries(formData.entries()) as FormProps
+
+      if (!values.name || !values.lastname || !values.message) {
+        toast.warning("Por favor, complete todos los campos")
+      }
+
+      const result = FormSchema.safeParse(values)
+
+      if (!result.success) {
+        toast.warning(result.error.errors[0].message)
+        return
+      }
+
+      values.rating = rating.toString()
+
+      setTestimonials((prev) => [...prev, values])
+
+      toast.success("Reseña enviada con éxito")
+      setOpen(false)
+    } catch (error) {
+      toast.error("Ocurrió un error al enviar la reseña")
+    } finally {
+      setIsLoading(false)
+    }
+  }
+
   return (
-    <form action="" className="w-full h-full flex justify-evenly items-center flex-col gap-5 rounded-lg">
+    <form
+      id="form-resenas"
+      onSubmit={handleSubmit}
+      className="w-full h-full flex justify-evenly items-center flex-col gap-5 rounded-lg"
+    >
       <div className="w-full flex sm:flex-row flex-col gap-5">
         <div className="flex flex-col w-full gap-1">
-          <label className={`${poppins.className} font-medium xs:text-base text-sm`}>Nombre</label>
-          <input name="name" type="text" placeholder="Ingrese su nombre" autoComplete='off' className={`${poppins.className} p-2 rounded-md outline-none border-[1px] border-[#7C7C7C] m-0 xs:text-base text-sm`} />
+          <label
+            className={`${poppins.className} font-medium xs:text-base text-sm`}
+          >
+            Nombre
+          </label>
+          <input
+            name="name"
+            type="text"
+            autoFocus
+            placeholder="Ingrese su nombre"
+            autoComplete="off"
+            className={`${poppins.className} p-2 rounded-md outline-none border-[1px] border-[#7C7C7C] m-0 xs:text-base text-sm`}
+          />
         </div>
         <div className="flex flex-col w-full gap-1">
-          <label className={`${poppins.className} font-medium xs:text-base text-sm`}>Apellido</label>
-          <input name="lastname" type="text" placeholder="Ingrese su apellido" autoComplete='off' className={`${poppins.className} p-2 rounded-md outline-none border-[1px] border-[#7C7C7C] m-0 xs:text-base text-sm`} />
+          <label
+            className={`${poppins.className} font-medium xs:text-base text-sm`}
+          >
+            Apellido
+          </label>
+          <input
+            name="lastname"
+            type="text"
+            placeholder="Ingrese su apellido"
+            autoComplete="off"
+            className={`${poppins.className} p-2 rounded-md outline-none border-[1px] border-[#7C7C7C] m-0 xs:text-base text-sm`}
+          />
         </div>
       </div>
       <div className="w-full flex flex-col gap-1">
         <label className={`${poppins.className} font-medium`}>Mensaje</label>
-        <textarea name="message" placeholder="Comparte tu experiencia en el bodegón" className={`${poppins.className} p-2 w-full h-32 resize-none outline-none border-[1px] border-[#7C7C7C] m-0 rounded-md xs:text-base text-sm`}></textarea>
+        <textarea
+          name="message"
+          placeholder="Comparte tu experiencia en el bodegón"
+          className={`${poppins.className} p-2 w-full h-32 resize-none outline-none border-[1px] border-[#7C7C7C] m-0 rounded-md xs:text-base text-sm`}
+        />
       </div>
-      <Rating />
+      <Rating finalRating={setRating} />
+      <footer className="w-full flex items-center justify-center flex-row gap-4">
+        <AlertDialogCancel
+          className={`${poppins.className} h-10 bg-white text-[#710996] sm:w-full w-1/2 rounded-md xs:text-base text-sm font-medium border-[2px] border-[#710996]`}
+        >
+          Cancelar
+        </AlertDialogCancel>
+        <button
+          type="submit"
+          className={`${poppins.className} h-10 bg-[#710996] text-white sm:w-full w-1/2 rounded-md xs:text-base text-sm font-medium`}
+        >
+          {isLoading ? "Enviando..." : "Enviar reseña"}
+        </button>
+      </footer>
     </form>
   )
 }
