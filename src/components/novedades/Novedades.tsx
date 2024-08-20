@@ -17,27 +17,27 @@ const Novedades = () => {
     {
       name: 'Telefe Visita el Bodegón de Lucas: Donde la Abundancia y la Calidad se Encuentran',
       description: "El local de Lucas Deonato y Natalia Estanguet ha capturado la atención de de muchos con sus generosas porciones y su inigualable calidad gastronómica. En esta exclusiva nota, Telefe destaca las especialidades que han hecho famoso a nuestro bodegón: milanesas XXL, pastas caseras y tortillas irresistibles. Descubre cómo logramos conquistar el paladar de los vecinos de Escobar y más allá, convirtiendo nuestro bodegón en un referente de la buena comida y la abundancia en el AMBA. ¡No te pierdas esta nota que celebra lo mejor de nuestra cocina!",
-      image: "/fotos/notas/LucasEntrevista.jpg"
+      image: "/fotos/notas/LucasEntrevista.png"
     },
     {
       name: 'Telefe Visita el Bodegón de Lucas: Donde la Abundancia y la Calidad se Encuentran',
       description: "El local de Lucas Deonato y Natalia Estanguet ha capturado la atención de de muchos con sus generosas porciones y su inigualable calidad gastronómica. En esta exclusiva nota, Telefe destaca las especialidades que han hecho famoso a nuestro bodegón: milanesas XXL, pastas caseras y tortillas irresistibles. Descubre cómo logramos conquistar el paladar de los vecinos de Escobar y más allá, convirtiendo nuestro bodegón en un referente de la buena comida y la abundancia en el AMBA. ¡No te pierdas esta nota que celebra lo mejor de nuestra cocina!",
-      image: "/fotos/notas/LucasEntrevista.jpg"
+      image: "/fotos/notas/LucasEntrevista.png"
     },
     {
       name: 'Telefe Visita el Bodegón de Lucas: Donde la Abundancia y la Calidad se Encuentran',
       description: "El local de Lucas Deonato y Natalia Estanguet ha capturado la atención de de muchos con sus generosas porciones y su inigualable calidad gastronómica. En esta exclusiva nota, Telefe destaca las especialidades que han hecho famoso a nuestro bodegón: milanesas XXL, pastas caseras y tortillas irresistibles. Descubre cómo logramos conquistar el paladar de los vecinos de Escobar y más allá, convirtiendo nuestro bodegón en un referente de la buena comida y la abundancia en el AMBA. ¡No te pierdas esta nota que celebra lo mejor de nuestra cocina!",
-      image: "/fotos/notas/LucasEntrevista.jpg"
+      image: "/fotos/notas/LucasEntrevista.png"
     },
     {
       name: 'Telefe Visita el Bodegón de Lucas: Donde la Abundancia y la Calidad se Encuentran',
       description: "El local de Lucas Deonato y Natalia Estanguet ha capturado la atención de de muchos con sus generosas porciones y su inigualable calidad gastronómica. En esta exclusiva nota, Telefe destaca las especialidades que han hecho famoso a nuestro bodegón: milanesas XXL, pastas caseras y tortillas irresistibles. Descubre cómo logramos conquistar el paladar de los vecinos de Escobar y más allá, convirtiendo nuestro bodegón en un referente de la buena comida y la abundancia en el AMBA. ¡No te pierdas esta nota que celebra lo mejor de nuestra cocina!",
-      image: "/fotos/notas/LucasEntrevista.jpg"
+      image: "/fotos/notas/LucasEntrevista.png"
     },
     {
       name: 'Telefe Visita el Bodegón de Lucas: Donde la Abundancia y la Calidad se Encuentran',
       description: "El local de Lucas Deonato y Natalia Estanguet ha capturado la atención de de muchos con sus generosas porciones y su inigualable calidad gastronómica. En esta exclusiva nota, Telefe destaca las especialidades que han hecho famoso a nuestro bodegón: milanesas XXL, pastas caseras y tortillas irresistibles. Descubre cómo logramos conquistar el paladar de los vecinos de Escobar y más allá, convirtiendo nuestro bodegón en un referente de la buena comida y la abundancia en el AMBA. ¡No te pierdas esta nota que celebra lo mejor de nuestra cocina!",
-      image: "/fotos/notas/LucasEntrevista.jpg"
+      image: "/fotos/notas/LucasEntrevista.png"
     },
   ]
 
@@ -52,7 +52,7 @@ const Novedades = () => {
           align: "center",
           loop: true,
         }}
-        className='w-[85%] h-[50%] 2xl:h-[30%] flex justify-center items-center gap-5'
+        className='w-[95%] h-[50%] 2xl:h-[30%] flex justify-center items-center gap-5'
       >
         <span className='w-[10%] h-full'>
           <CarouselPrevious className='w-[45px] h-[45px] border-[3px] border-[#3394BB] ' />
