@@ -62,7 +62,7 @@ const Testimonios = () => {
   return (
     <main
       id="testimonios"
-      className="w-full h-max flex flex-col justify-center items-center gap-5 pb-20"
+      className="w-full h-max flex flex-col justify-center items-center gap-5 pb-36"
     >
       <Toaster position="top-center" duration={3000} richColors />
       <div className="flex justify-center items-center flex-col gap-2">

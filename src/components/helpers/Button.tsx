@@ -20,6 +20,7 @@ const Button = ({ className, title, href, children }: ButtonProps) => {
     <Link
       href={href}
       className={className}
+      target='_blank'
     >{title || children}</Link>
   )
 }

@@ -4,11 +4,14 @@ import { CarouselItem } from "../ui/carousel"
 import { Poppins } from "next/font/google"
 import Title from "../helpers/Title"
 import PictureFrame from "../helpers/PictureFrame"
+import Button from "../helpers/Button"
+import { cn } from "@/lib/utils"
 
 type CardNovedadesProps = {
   title: string
   description: string
   image: string
+  href: string
 }
 
 const poppins = Poppins({
@@ -16,7 +19,7 @@ const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 })
 
-const CardNovedades = ({ title, description, image }: CardNovedadesProps) => {
+const CardNovedades = ({ title, description, image, href }: CardNovedadesProps) => {
   return (
     <CarouselItem className="w-full flex justify-center items-center -pl-4 px-5">
       <article className="w-full h-full flex justify-evenly items-center lg:flex-row flex-col gap-5">
@@ -37,6 +40,9 @@ const CardNovedades = ({ title, description, image }: CardNovedadesProps) => {
           <p className={`${poppins.className} lg:text-sm text-xl 2xl:text-xl w-full`}>
             {description}
           </p>
+          <div className="w-full h-max flex justify-end items-center">
+            <Button href={href} className={cn(`${poppins.className} w-1/2 h-10 bg-[#3394BB] text-base rounded-xl flex justify-center items-center font-medium p-2 text-white`)}>Ir a entrevista</Button>
+          </div>
         </div>
       </article>
     </CarouselItem>

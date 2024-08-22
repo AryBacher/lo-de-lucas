@@ -49,7 +49,7 @@ const Notas = () => {
   ]
 
   return (
-    <section id='notas' className="w-full h-max flex justify-center items-center pt-10">
+    <section id='notas' className="w-full h-max flex justify-center items-center">
       <main className="w-[90%] flex justify-center items-center flex-col gap-6">
 
         <div className='w-full flex flex-col justify-center items-center gap-2'>

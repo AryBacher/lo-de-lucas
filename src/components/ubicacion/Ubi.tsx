@@ -29,7 +29,7 @@ const Ubi = () => {
   ]
 
   return (
-    <section className='w-[90%] xl:w-[85%] flex justify-center items-center flex-col gap-5 py-10'
+    <section className='w-[90%] xl:w-[85%] flex justify-center items-center flex-col gap-5'
       id='ubicacion'>
       <div className='w-full h-1/6 flex justify-center items-center flex-col gap-2'>
         <Title
