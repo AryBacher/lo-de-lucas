@@ -19,7 +19,12 @@ const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 })
 
-const CardNovedades = ({ title, description, image, href }: CardNovedadesProps) => {
+const CardNovedades = ({
+  title,
+  description,
+  image,
+  href,
+}: CardNovedadesProps) => {
   return (
     <CarouselItem className="w-full flex justify-center items-center -pl-4 px-5">
       <article className="w-full h-full flex justify-evenly items-center lg:flex-row flex-col gap-5">
@@ -31,17 +36,26 @@ const CardNovedades = ({ title, description, image, href }: CardNovedadesProps) 
           imageClassName="rounded-lg w-[730px] h-[390px] object-cover"
           divClassName="w-max h-full flex justify-center items-center"
         />
-        <div className="lg:w-[45%] w-full h-full flex flex-col justify-center items-start gap-5">
+        <div className="lg:w-[45%] w-full max-h-[250px] flex flex-col justify-center items-start gap-7">
           <Title
             title={title}
             className={`${poppins.className} font-bold lg:text-xl text-2xl 2xl:text-4xl w-full leading-normal`}
             divClassName="justify-start items-start h-auto"
           />
-          <p className={`${poppins.className} lg:text-sm text-xl 2xl:text-xl w-full`}>
+          <p
+            className={`${poppins.className} lg:text-sm text-base 2xl:text-base w-full`}
+          >
             {description}
           </p>
-          <div className="w-full h-max flex justify-end items-center">
-            <Button href={href} className={cn(`${poppins.className} w-1/2 h-10 bg-[#3394BB] text-base rounded-xl flex justify-center items-center font-medium p-2 text-white`)}>Ir a entrevista</Button>
+          <div className="w-full h-max flex justify-start items-center">
+            <Button
+              href={href}
+              className={cn(
+                `${poppins.className} w-1/2 h-10 bg-[#3394BB] text-base rounded-xl flex justify-center items-center font-medium p-2 text-white`
+              )}
+            >
+              Ir a entrevista
+            </Button>
           </div>
         </div>
       </article>
