@@ -52,7 +52,7 @@ const Novedades = () => {
           loop: true,
           slidesToScroll: 1,
         }}
-        className='w-[95%] lg:h-[50%] h-[30%] 2xl:h-[30%] flex justify-center items-center'
+        className='w-[95%] lg:h-[50%] h-[30%] 2xl:h-[30%] flex justify-center items-center gap-5'
       >
         <span className='w-[10%] h-full lg:flex hidden'>
           <CarouselPrevious className='w-[45px] h-[45px] border-[3px] border-[#3394BB] ' />

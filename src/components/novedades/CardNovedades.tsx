@@ -39,7 +39,7 @@ const CardNovedades = ({
         <div className="lg:w-[45%] md:w-[80%] w-[90%] max-h-[450px] flex flex-col justify-center items-center  2xl:gap-10 lg:gap-[14px] gap-3">
           <Title
             title={title}
-            className={`${poppins.className} font-bold lg:text-2xl text-base 2xl:text-4xl w-full leading-normal lg:text-start text-center`}
+            className={`${poppins.className} font-bold lg:text-xl text-base 2xl:text-4xl w-full leading-normal lg:text-start text-center`}
             divClassName="lg:justify-start justify-center lg:items-start items-center h-auto"
           />
           <p
@@ -51,7 +51,7 @@ const CardNovedades = ({
             <Button
               href={href}
               className={cn(
-                `${poppins.className} w-1/2 2xl:w-1/3 h-10 bg-[#3394BB] text-base rounded-xl flex justify-center items-center font-medium p-2 text-white`
+                `${poppins.className} w-1/2 h-10 bg-[#3394BB] text-base rounded-xl flex justify-center items-center font-medium p-2 text-white`
               )}
             >
               Ir a entrevista
