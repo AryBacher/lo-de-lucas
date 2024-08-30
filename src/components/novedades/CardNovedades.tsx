@@ -26,24 +26,24 @@ const CardNovedades = ({
   href,
 }: CardNovedadesProps) => {
   return (
-    <CarouselItem className="w-full flex justify-center items-center -pl-4 px-5">
+    <CarouselItem className="w-full flex justify-center items-center -pl-4 ">
       <article className="w-full h-full flex justify-evenly items-center lg:flex-row flex-col gap-5">
         <PictureFrame
           alt={title}
           width={500}
           height={250}
           image={image}
-          imageClassName="rounded-lg w-[730px] h-[390px] object-cover"
+          imageClassName="rounded-lg lg:w-[730px] sm:w-[600px] xs:w-[370px] w-[280px] md:h-[400px] h-[212px] lg:h-[400px] lg:object-cover"
           divClassName="w-max h-full flex justify-center items-center"
         />
-        <div className="lg:w-[45%] w-full max-h-[250px] flex flex-col justify-center items-start gap-7">
+        <div className="lg:w-[45%] md:w-[80%] w-[90%] lg:max-h-[225px] max-h-[400px] flex flex-col justify-center items-start 2xl:gap-7 lg:gap-[14px] gap-3">
           <Title
             title={title}
-            className={`${poppins.className} font-bold lg:text-xl text-2xl 2xl:text-4xl w-full leading-normal`}
+            className={`${poppins.className} font-bold lg:text-lg text-base 2xl:text-4xl w-full leading-normal`}
             divClassName="justify-start items-start h-auto"
           />
           <p
-            className={`${poppins.className} lg:text-sm text-base 2xl:text-base w-full`}
+            className={`${poppins.className} lg:text-sm text-xs 2xl:text-base w-full`}
           >
             {description}
           </p>

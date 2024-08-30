@@ -15,28 +15,28 @@ const Novedades = () => {
 
   const aboutArr = [
     {
-      name: 'Telefe Visita el Bodegón de Lucas: Donde la Abundancia y la Calidad se Encuentran',
-      description: 'El local de Lucas Deonato y Natalia Estanguet ha capturado la atención de de muchos con sus generosas porciones y su inigualable calidad gastronómica. En esta exclusiva nota, Telefe destaca las especialidades que han hecho famoso a nuestro bodegón: milanesas XXL, pastas caseras y tortillas irresistibles. Descubre cómo logramos conquistar el paladar de los vecinos de Escobar y más allá, convirtiendo nuestro bodegón en un referente de la buena comida y la abundancia en el AMBA. ¡No te pierdas esta nota que celebra lo mejor de nuestra cocina!',
-      image: "/fotos/notas/LucasEntrevista.png",
-      href: ""
+      name: 'Nota en CARAS! Lo de Lucas Bodegón',
+      description: "El local de Lucas Deonato y Natalia Estanguet ha capturado la atención de de muchos con sus generosas porciones y su inigualable calidad gastronómica. En esta exclusiva nota, Telefe destaca las especialidades que han hecho famoso a nuestro bodegón: milanesas XXL, pastas caseras y tortillas irresistibles. Descubre cómo logramos conquistar el paladar de los vecinos de Escobar y más allá, convirtiendo nuestro bodegón en un referente de la buena comida y la abundancia en el AMBA. ¡No te pierdas esta nota!",
+      image: "/fotos/notas/nota-caras.jpg",
+      href: "https://caras.perfil.com/noticias/caras-resto/lo-de-lucas-bodegon.phtml"
     },
+    // {
+    //   name: 'Telefe Visita el Bodegón de Lucas',
+    //   description: 'El local de Lucas Deonato y Natalia Estanguet ha capturado la atención de de muchos con sus generosas porciones y su inigualable calidad gastronómica. En esta exclusiva nota, Telefe destaca las especialidades que han hecho famoso a nuestro bodegón: milanesas XXL, pastas caseras y tortillas irresistibles. Descubre cómo logramos conquistar el paladar de los vecinos de Escobar y más allá, convirtiendo nuestro bodegón en un referente de la buena comida y la abundancia en el AMBA. ¡No te pierdas esta nota que celebra lo mejor de nuestra cocina!',
+    //   image: "/fotos/notas/LucasEntrevista.png",
+    //   href: ""
+    // },
     {
-      name: 'Somos parte de la historia de Escobar: ADN Escobarense nos entrevista',
-      description: "Con la calidad periodística y artística que caracteriza a cada una de sus producciones, ADN Escobarense inició este domingo su cuarta temporada y el estreno de su primer capítulo pudo verse en el canal de YouTube de El Día de Escobar “Empezamos con nada y hoy tenemos mucho: pero no en lo económico sino en el reconocimiento de la gente y en la cantidad de gente que viene todos los días”, comenta Natalia Estanguet, compañera de Lucas Deonato en este proyecto que iniciaron en 2016. Además, ella es la autora de los más de 200 platos que tiene la carta.",
+      name: 'Somos parte de la historia de Escobar',
+      description: "Con la calidad periodística y artística que caracteriza a cada una de sus producciones, ADN Escobarense inició este domingo su cuarta temporada y el estreno de su primer capítulo pudo verse en el canal de YouTube de El Día de Escobar “Empezamos con nada y hoy tenemos mucho: pero no en lo económico sino en el reconocimiento de la gente y en la cantidad de gente que viene todos los días”, comenta Natalia Estanguet, compañera de Lucas Deonato. Natalia y Lucas están de acuerdo que “Lo de Lucas” es, fue y será siempre 100% escobarense.",
       image: "/fotos/notas/nota-adn.jpg",
       href: "https://eldiadeescobar.com.ar/adn-escobarense-inicio-su-cuarta-temporada-con-lo-de-lucas/"
     },
     {
-      name: 'Lo de Lucas, el mejor bodegón del AMBA',
-      description: '"Lo de Lucas", uno de los clásicos de Belén de Escobar que se ubica en Av. 25 de Mayo 997, recibió el premio máximo por parte de Cucinare de ser el mejor bodegón de todos aquellos locales que participaron de la selección 2023."Es un orgullo que Lo de Lucas haya sido elegido por Cucinare como el mejor bodegón del Área Metropolitana de Buenos Aires. Este premio, el más popular de la industria gastronómica argentina, tiene como objetivo destacar el esfuerzo de los emprendedores del rubro, manifestaron desde el Municipio de Escobar. El comercio se destaca por sus milanesas y tortas gigantes, tortillas, y muchas más opciones, todas ellas un deleite para los ojos y el paladar.',
+      name: 'Lo De Lucas: El mejor bodegón del AMBA',
+      description: '"Lo de Lucas", uno de los clásicos de Belén de Escobar que se ubica en Av. 25 de Mayo 997, recibió el premio máximo por parte de Cucinare de ser el mejor bodegón de todos aquellos locales que participaron de la selección 2023."Es un orgullo que Lo de Lucas haya sido elegido por Cucinare como el mejor bodegón del Área Metropolitana de Buenos Aires. Este premio, el más popular de la industria gastronómica argentina, tiene como objetivo destacar el esfuerzo de los emprendedores del rubro, manifestaron desde el Municipio de Escobar.',
       image: "/fotos/notas/nota-3.jpg",
       href: "https://www.quepasaweb.com.ar/un-restaurante-de-escobar-fue-elegido-como-el-mejor-bodegon-del-area-metropolitana-de-buenos-aires/"
-    },
-    {
-      name: 'Nota en CARAS! Contando en primera persona nuestra historia',
-      description: "El local de Lucas Deonato y Natalia Estanguet ha capturado la atención de de muchos con sus generosas porciones y su inigualable calidad gastronómica. En esta exclusiva nota, Telefe destaca las especialidades que han hecho famoso a nuestro bodegón: milanesas XXL, pastas caseras y tortillas irresistibles. Descubre cómo logramos conquistar el paladar de los vecinos de Escobar y más allá, convirtiendo nuestro bodegón en un referente de la buena comida y la abundancia en el AMBA. ¡No te pierdas esta nota que celebra lo mejor de nuestra cocina!",
-      image: "/fotos/notas/nota-caras.jpg",
-      href: "https://caras.perfil.com/noticias/caras-resto/lo-de-lucas-bodegon.phtml"
     },
   ]
 
@@ -50,10 +50,11 @@ const Novedades = () => {
         opts={{
           align: "center",
           loop: true,
+          slidesToScroll: 1,
         }}
-        className='w-[95%] h-[50%] 2xl:h-[30%] flex justify-center items-center gap-5'
+        className='w-[95%] lg:h-[50%] h-[30%] 2xl:h-[30%] flex justify-center items-center'
       >
-        <span className='w-[10%] h-full'>
+        <span className='w-[10%] h-full lg:flex hidden'>
           <CarouselPrevious className='w-[45px] h-[45px] border-[3px] border-[#3394BB] ' />
         </span>
         <CarouselContent className=" flex flex-row m-0">
@@ -67,7 +68,7 @@ const Novedades = () => {
             />
           ))}
         </CarouselContent>
-        <span className='w-[10%] h-full'>
+        <span className='w-[10%] h-full lg:flex hidden'>
           <CarouselNext className='w-[40px] h-[40px] border-[3px] border-[#3394BB] flex justify-center items-center' />
         </span>
       </Carousel>
