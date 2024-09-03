@@ -22,7 +22,7 @@ const Novedades = () => {
       name: "Nota en CARAS! Lo de Lucas Bodegón",
       description:
         "El local de Lucas Deonato y Natalia Estanguet ha capturado la atención de de muchos con sus generosas porciones y su inigualable calidad gastronómica. En esta exclusiva nota, Telefe destaca las especialidades que han hecho famoso a nuestro bodegón: milanesas XXL, pastas caseras y tortillas irresistibles. Descubre cómo logramos conquistar el paladar de los vecinos de Escobar y más allá, convirtiendo nuestro bodegón en un referente de la buena comida y la abundancia en el AMBA. ¡No te pierdas esta nota!",
-      image: "/fotos/notas/nota-caras.jpg",
+      image: "/fotos/notas/nota-caras-2.jpg",
       href: "https://caras.perfil.com/noticias/caras-resto/lo-de-lucas-bodegon.phtml",
     },
     // {
