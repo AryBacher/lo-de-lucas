@@ -26,28 +26,28 @@ const CardNovedades = ({
   href,
 }: CardNovedadesProps) => {
   return (
-    <CarouselItem className="w-full flex justify-center items-center -pl-4 px-5">
-      <article className="w-full h-full flex justify-evenly items-center lg:flex-row flex-col gap-5">
+    <CarouselItem className="w-full flex justify-center items-center -pl-4 ">
+      <article className="w-full h-full  flex justify-center items-center lg:flex-row flex-col gap-5">
         <PictureFrame
           alt={title}
           width={500}
           height={250}
           image={image}
-          imageClassName="rounded-lg w-[730px] h-[390px] object-cover"
+          imageClassName="rounded-lg lg:w-[730px] sm:w-[600px] xs:w-[370px] w-[300px] md:h-[425px] h-[212px] lg:h-[400px] lg:object-cover"
           divClassName="w-max h-full flex justify-center items-center"
         />
-        <div className="lg:w-[45%] w-full max-h-[250px] flex flex-col justify-center items-start gap-7">
+        <div className="lg:w-[45%] md:w-[80%] w-[90%] max-h-[450px] flex flex-col justify-center items-center  2xl:gap-10 lg:gap-[14px] gap-3">
           <Title
             title={title}
-            className={`${poppins.className} font-bold lg:text-xl text-2xl 2xl:text-4xl w-full leading-normal`}
-            divClassName="justify-start items-start h-auto"
+            className={`${poppins.className} font-bold lg:text-xl text-base 2xl:text-4xl w-full leading-normal lg:text-start text-center`}
+            divClassName="lg:justify-start justify-center lg:items-start items-center h-auto"
           />
           <p
-            className={`${poppins.className} lg:text-sm text-base 2xl:text-base w-full`}
+            className={`${poppins.className} xl:text-base text-xs 2xl:text-xl w-full lg:text-start text-center`}
           >
             {description}
           </p>
-          <div className="w-full h-max flex justify-start items-center">
+          <div className="w-full h-max flex lg:justify-start justify-center items-center pt-2">
             <Button
               href={href}
               className={cn(

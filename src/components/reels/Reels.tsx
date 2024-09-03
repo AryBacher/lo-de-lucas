@@ -11,34 +11,30 @@ const poppins = Poppins({
 const Reels = () => {
   const CardInfo = [
     {
-      title:
-        "La historia detrás del bodegón Lo de Lucas, el restaurante de Escobar que...",
+      title: "@turistadigitalargentina",
       description:
-        "El local de Lucas Deonato y Natalia Estanguet se transformó en un boom gastronómico...",
+        "Bodegón Lo de Lucas en 📍Escobar. ❤️ Platos tipicos, exquisitos y abundantes 🌍",
       image: "/fotos/Influ-1.png",
       href: "https://www.instagram.com/p/C0MkH0ROs-v",
     },
     {
-      title:
-        "La historia detrás del bodegón Lo de Lucas, el restaurante de Escobar que...",
+      title: "@clubdelbajon",
       description:
-        "El local de Lucas Deonato y Natalia Estanguet se transformó en un boom gastronómico...",
+        "UNA DE LAS MEJORES EXPERIENCIAS QUE TUVE EN UN BODEGÓN 🐷🍰🍽️❤️‍🔥",
       image: "/fotos/Influ-1.png",
       href: "https://www.instagram.com/p/CtKq7MKg-H-",
     },
     {
-      title:
-        "La historia detrás del bodegón Lo de Lucas, el restaurante de Escobar que...",
+      title: "@lachicadelbrunch",
       description:
-        "Cuando se elige a un bodegón para ir a comer se da por sentado que las porciones...",
+        "❗️UNO DE LOS BODEGONES MÁS ZARPADOS🏆 ❗️Siempre tiene fila y especialmente los findes!",
       image: "/fotos/Influ-2.png",
       href: "https://www.instagram.com/reel/CuiL97NM6iN",
     },
     {
-      title:
-        "La historia detrás del bodegón Lo de Lucas, el restaurante de Escobar que...",
+      title: "@joeburgerchallenge",
       description:
-        "El local de Lucas Deonato y Natalia Estanguet se transformó en un boom gastronómico...",
+        "En este restaurante todas las raciones son exageradamente GIGANTES.",
       image: "/fotos/Influ-3.png",
       href: "https://www.instagram.com/p/C1aDTsrNt07",
     },
