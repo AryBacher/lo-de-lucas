@@ -14,35 +14,30 @@ const Reels = () => {
       title: "@turistadigitalargentina",
       description:
         "Bodegón Lo de Lucas en 📍Escobar. ❤️ Platos tipicos, exquisitos y abundantes 🌍",
-      image: "/fotos/Influ-1.png",
       href: "https://www.instagram.com/p/C0MkH0ROs-v",
     },
     {
       title: "@clubdelbajon",
       description:
         "UNA DE LAS MEJORES EXPERIENCIAS QUE TUVE EN UN BODEGÓN 🐷🍰🍽️❤️‍🔥",
-      image: "/fotos/Influ-1.png",
       href: "https://www.instagram.com/p/CtKq7MKg-H-",
     },
     {
       title: "@lachicadelbrunch",
       description:
-        "❗️UNO DE LOS BODEGONES MÁS ZARPADOS🏆 ❗️Siempre tiene fila y especialmente los findes!",
-      image: "/fotos/Influ-2.png",
+        "❗️UNO DE LOS BODEGONES MÁS ZARPADOS🏆 ❗️Siempre tiene fila y especialmente...",
       href: "https://www.instagram.com/reel/CuiL97NM6iN",
     },
     {
       title: "@joeburgerchallenge",
       description:
         "En este restaurante todas las raciones son exageradamente GIGANTES.",
-      image: "/fotos/Influ-3.png",
       href: "https://www.instagram.com/p/C1aDTsrNt07",
     },
     {
-      title: "Toda la comida en @lo.delucas es GIGANTE...",
+      title: "@cocinadelpirata",
       description:
-        "El local de Lucas Deonato y Natalia Estanguet se transformó en un boom gastronómico...",
-      image: "/fotos/Influ-3.png",
+        "🤩Super bien de precio y muy rico!😍Pediros las croquetas enormes y la milanga",
       href: "https://www.instagram.com/reel/Czn_mUGogS6/?igsh=YjVnZmp3dzRzOWJh",
     },
   ]
@@ -71,7 +66,6 @@ const Reels = () => {
                 key={index}
                 title={card.title}
                 description={card.description}
-                image={card.image}
                 href={card.href}
               />
             )

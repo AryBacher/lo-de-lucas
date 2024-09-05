@@ -51,6 +51,14 @@ const Testimonios = () => {
         "Lugar agradable, comida abundante y muy sabrosa. Una porción de milanesa a la napolitana y papas fritas alcanza para que coman tres personas...",
       rating: "5",
     },
+    {
+      name: "Mariana Soreira",
+      lastname: "Gonzalez",
+      message:
+        "asdasdasdasdasdasdpara 4 o 5 personas, deliciosa!  Las tortas se veían giganteasdasdasds, la próxima vez probaré 😋🐷",
+      rating: "5",
+    },
+
   ]
 
   const [testimonials, setTestimonials] = useState(aboutArr)
@@ -71,7 +79,7 @@ const Testimonios = () => {
           className="text-[#710996] w-full xl:h-auto text-3xl font-semibold  text-center"
         />
         <p
-          className={`${poppins.className} w-[80%] text-sm text-[#7C7C7C] hidden md:block text-center`}
+          className={`${poppins.className} w-[80%] text-sm text-[#7C7C7C] hidden md:block text-center `}
         >
           Escuche a nuestros clientes satisfechos acerca de su experiencia con
           nuestro restaurante.

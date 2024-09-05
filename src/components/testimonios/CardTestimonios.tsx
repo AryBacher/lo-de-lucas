@@ -19,7 +19,7 @@ const CardTestimonios = ({ name, message, lastname, rating }: CardProps) => {
     <CarouselItem className="lg:basis-1/3 2xl:basis-1/3 w-full flex justify-center items-center px-4 ">
       <div className="w-[400px] h-[270px] md:h-[250px] border-[2px] border-[#710996] px-4 rounded-lg flex justify-center items-center flex-col">
         <div className="w-full h-1/3 flex justify-center items-center flex-col gap-1 pb-3 md:pb-0">
-          <h2 className={`${poppins.className} pt-6 md:pt-0`}>
+          <h2 className={`${poppins.className} pt-6 md:pt-0 select-none`}>
             {name + " " + lastname}
           </h2>
           <div className="w-full h-max flex items-center justify-center flex-row gap-1">
@@ -55,7 +55,7 @@ const CardTestimonios = ({ name, message, lastname, rating }: CardProps) => {
             />
           </svg>
           <p
-            className={`${poppins.className} w-[66%] h-full text-sm md:text-base text-center flex justify-center items-center `}
+            className={`${poppins.className} select-none w-[66%] h-full text-sm md:text-base text-center flex justify-center items-center `}
           >
             {message}
           </p>

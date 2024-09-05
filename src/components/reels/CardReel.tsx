@@ -8,7 +8,6 @@ import InstagramEmbed from "./InstagramEmbed"
 
 interface Props {
   title: string
-  image: string
   href: string
   description: string
   className?: string
