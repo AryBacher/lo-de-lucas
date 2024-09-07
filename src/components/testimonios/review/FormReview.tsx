@@ -4,6 +4,7 @@ import Rating from "./Rating"
 import { toast } from "sonner"
 import { FormSchema } from "@/schema/FormSchema"
 import { AlertDialogCancel } from "@radix-ui/react-alert-dialog"
+import { createClient } from "@/lib/supabase/client"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -12,21 +13,22 @@ const poppins = Poppins({
 
 export type FormProps = {
   name: string
-  lastname: string
+  last_name: string
   message: string
   rating: string
 }
 
 type FormReviewProps = {
-  setTestimonials: Dispatch<SetStateAction<FormProps[]>>
   setOpen: Dispatch<SetStateAction<boolean>>
+  setState: Dispatch<SetStateAction<boolean>>
 }
 
-const FormReview = ({ setTestimonials, setOpen }: FormReviewProps) => {
+const FormReview = ({ setOpen, setState }: FormReviewProps) => {
   const [isLoading, setIsLoading] = useState(false)
   const [rating, setRating] = useState(0)
+  const supabase = createClient()
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsLoading(true)
 
@@ -34,11 +36,15 @@ const FormReview = ({ setTestimonials, setOpen }: FormReviewProps) => {
       const formData = new FormData(e.currentTarget)
       const values = Object.fromEntries(formData.entries()) as FormProps
 
-      if (!values.name || !values.lastname || !values.message) {
+      console.log(values)
+
+      if (!values.name || !values.last_name || !values.message) {
         toast.warning("Por favor, complete todos los campos")
       }
 
       const result = FormSchema.safeParse(values)
+
+      console.log(result)
 
       if (!result.success) {
         toast.warning(result.error.errors[0].message)
@@ -47,7 +53,11 @@ const FormReview = ({ setTestimonials, setOpen }: FormReviewProps) => {
 
       values.rating = rating.toString()
 
-      setTestimonials((prev) => [...prev, values])
+      // Send the form data to the server
+
+      await supabase.from("feedback").insert(values)
+
+      setState((prev) => !prev)
 
       toast.success("Reseña enviada con éxito")
       setOpen(false)
@@ -87,7 +97,7 @@ const FormReview = ({ setTestimonials, setOpen }: FormReviewProps) => {
             Apellido
           </label>
           <input
-            name="lastname"
+            name="last_name"
             type="text"
             placeholder="Ingrese su apellido"
             autoComplete="off"

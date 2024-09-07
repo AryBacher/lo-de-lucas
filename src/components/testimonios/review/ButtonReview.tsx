@@ -15,11 +15,11 @@ const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 })
 
-type ButtonReviewProps = {
-  setTestimonials: Dispatch<SetStateAction<FormProps[]>>
-}
-
-export default function ButtonReview({ setTestimonials }: ButtonReviewProps) {
+export default function ButtonReview({
+  setState,
+}: {
+  setState: Dispatch<SetStateAction<boolean>>
+}) {
   const [open, setOpen] = useState(false)
   return (
     <AlertDialog onOpenChange={setOpen} open={open}>
@@ -42,7 +42,7 @@ export default function ButtonReview({ setTestimonials }: ButtonReviewProps) {
             </label>
           </AlertDialogDescription>
         </AlertDialogHeader>
-        <FormReview setTestimonials={setTestimonials} setOpen={setOpen} />
+        <FormReview setOpen={setOpen} setState={setState} />
       </AlertDialogContent>
     </AlertDialog>
   )

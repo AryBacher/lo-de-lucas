@@ -8,64 +8,39 @@ import { Poppins } from "next/font/google"
 import ButtonReview from "./review/ButtonReview"
 import Title from "../helpers/Title"
 import { Toaster } from "sonner"
+import { createClient } from "@/lib/supabase/client"
 
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 })
 
+type FeedBackProps = {
+  name: string
+  lastname: string
+  message: string
+  rating: string
+}
+
 const Testimonios = () => {
-  const aboutArr = [
-    {
-      name: "Facundo Soreira",
-      lastname: "Gonzalez",
-      message:
-        "Las porciones son gigantescas, todo para compartir, nos pedimos la milanesa napolitana y la tortilla española, q delicia comimos entre cuatro...",
-      rating: "5",
-    },
-    {
-      name: "Martina Prieto",
-      lastname: "Gonzalez",
-      message:
-        "Las porciones son muy grandes 😌 pedimos una milanesa, unas papas con cheddar, y los bastóncitos de muzzarella con una coca grande...",
-      rating: "5",
-    },
-    {
-      name: "Alicia Diaz Hutter",
-      lastname: "Gonzalez",
-      message:
-        "Es un lugar agradable, pocas mesas...vayan temprano. Las milanesas son como para 4 o 5 personas, deliciosa!  Las tortas se veían gigantes, la próxima vez probaré 😋🐷",
-      rating: "5",
-    },
-    {
-      name: "María Julieta Pérez Corneli",
-      lastname: "Gonzalez",
-      message:
-        "Pese a que ya desde antes de las 8 de la noche había fila para comer y eso en otro lugar me desalentaria por la espera, valió completamente la pena!...",
-      rating: "5",
-    },
-    {
-      name: "Maria del Carmen Brown",
-      lastname: "Gonzalez",
-      message:
-        "Lugar agradable, comida abundante y muy sabrosa. Una porción de milanesa a la napolitana y papas fritas alcanza para que coman tres personas...",
-      rating: "5",
-    },
-    {
-      name: "Mariana Soreira",
-      lastname: "Gonzalez",
-      message:
-        "asdasdasdasdasdasdpara 4 o 5 personas, deliciosa!  Las tortas se veían giganteasdasdasds, la próxima vez probaré 😋🐷",
-      rating: "5",
-    },
-
-  ]
-
-  const [testimonials, setTestimonials] = useState(aboutArr)
+  const supabase = createClient()
+  const [feedbacks, setFeedbacks] = useState<FeedBackProps[]>([])
+  const [state, setState] = useState(false)
 
   useEffect(() => {
-    console.log(testimonials)
-  }, [testimonials])
+    const fetchFeedbacks = async () => {
+      const { data, error } = await supabase.from("feedback").select()
+
+      if (error) {
+        console.error(error)
+        return
+      }
+
+      setFeedbacks(data)
+    }
+
+    fetchFeedbacks()
+  }, [state])
 
   return (
     <main
@@ -98,19 +73,20 @@ const Testimonios = () => {
         className="w-full h-full flex justify-center items-center overflow-hidden"
       >
         <CarouselContent className="flex flex-row m-0">
-          {testimonials.map((item, index) => (
-            <CardTestimonios
-              key={index}
-              name={item.name}
-              message={item.message}
-              lastname={item.lastname}
-              rating={item.rating}
-            />
-          ))}
+          {feedbacks &&
+            feedbacks.map((item, index) => (
+              <CardTestimonios
+                key={index}
+                name={item.name}
+                message={item.message}
+                lastname={item.last_name}
+                rating={item.rating}
+              />
+            ))}
         </CarouselContent>
       </Carousel>
       <div>
-        <ButtonReview setTestimonials={setTestimonials} />
+        <ButtonReview setState={setState} />
       </div>
     </main>
   )
