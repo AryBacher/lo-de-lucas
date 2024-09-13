@@ -10,17 +10,17 @@ const poppins = Poppins({
 type CardProps = {
   name: string
   message: string
-  lastname: string
+  last_name: string
   rating: string
 }
 
-const CardTestimonios = ({ name, message, lastname, rating }: CardProps) => {
+const CardTestimonios = ({ name, message, last_name, rating }: CardProps) => {
   return (
     <CarouselItem className="lg:basis-1/3 2xl:basis-1/3 w-full flex justify-center items-center px-4 ">
       <div className="w-[400px] h-[270px] md:h-[250px] border-[2px] border-[#710996] px-4 rounded-lg flex justify-center items-center flex-col">
         <div className="w-full h-1/3 flex justify-center items-center flex-col gap-1 pb-3 md:pb-0">
           <h2 className={`${poppins.className} pt-6 md:pt-0 select-none`}>
-            {name + " " + lastname}
+            {name + " " + last_name}
           </h2>
           <div className="w-full h-max flex items-center justify-center flex-row gap-1">
             {Array.from({ length: Number(rating) }).map((_, index) => (

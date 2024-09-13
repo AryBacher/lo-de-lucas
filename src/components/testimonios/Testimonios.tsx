@@ -17,7 +17,7 @@ const poppins = Poppins({
 
 type FeedBackProps = {
   name: string
-  lastname: string
+  last_name: string
   message: string
   rating: string
 }
@@ -79,7 +79,7 @@ const Testimonios = () => {
                 key={index}
                 name={item.name}
                 message={item.message}
-                lastname={item.last_name}
+                last_name={item.last_name}
                 rating={item.rating}
               />
             ))}
