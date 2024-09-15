@@ -86,7 +86,7 @@ const Footer = () => {
             © 2024 Lo De Lucas. Todos los derechos reservados.
           </small>
           <small className={`${poppins.className} text-center text-white/60 text-sm font-normal `}>
-            Diseñado y desarrollado por <Link href="https://synera.com.ar" target='_blank' className='underline text-[#84E9FF]'>Synera</Link>
+            Desarrollado por <Link href="https://bacherbros.com/" target='_blank' className='underline text-[#84E9FF]'>Bacher Bros</Link>
           </small>
         </div>
       </div>
