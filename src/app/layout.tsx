@@ -3,6 +3,7 @@ import { Oswald } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer/Footer";
 import Encabezado from "@/components/encabezado/Encabezado";
+import { Analytics } from '@vercel/analytics/next';
 
 const oswald = Oswald({ subsets: ["latin"] });
 
@@ -30,6 +31,7 @@ export default function RootLayout({
           <Encabezado />
           {children}
           <Footer />
+          <Analytics />
         </body>
       </html>
     </>
